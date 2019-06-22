@@ -40,9 +40,11 @@
             <a
               class="nav-link "
               href="#"
-              id="navbarDropdown"
+              
               role="button"
-              data-toggle="dropdown"
+              aria-controls="navbarDropdown"
+              data-toggle="collapse"
+              data-target="#navbarDropdown"
               aria-haspopup="true"
               aria-expanded="false"
             >
@@ -52,6 +54,7 @@
             </a>
             <div
               class="dropdown-menu animated flipInY"
+              id="navbarDropdown"
               aria-labelledby="navbarDropdown"
             >
               <a class="dropdown-item" href="#"
