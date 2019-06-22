@@ -1,0 +1,18 @@
+// Navbars
+
+.bg {
+  &-dark {
+    @include set-background($dark-color);
+    a {
+      @include set-color(#fff);
+    }
+  }
+}
+
+//floats
+.f-right {
+  float: right;
+}
+.f-left {
+  float: left;
+}

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="assets/css/core.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" href="assets/themify-icons/themify-icons.css" />
+    <link rel="stylesheet" href="assets/css/wizard.min.css" />
+    <link rel="stylesheet" href="assets/css/formValidation.min.css" />
+    <link rel="stylesheet" href="assets/css/styles.min.css" />
+    <title>Panamá Seguro</title>
+  </head>
+  <body>
+    <nav class="navbar user-navbar navbar-expand-lg fixed-top bg-dark">
+      <a class="navbar-brand" href="#">Panamá <span>Seguro</span></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><i class="ti-bell"></i>
+              <span class="tag tag-danger top">9</span></a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link "
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <div class="avatar box-48">
+                <img src="assets/img/1.jpg" alt="" />
+              </div>
+            </a>
+            <div
+              class="dropdown-menu animated flipInY"
+              aria-labelledby="navbarDropdown"
+            >
+              <a class="dropdown-item" href="#"
+                ><i class="ti-email m-r-0-5"></i> Inbox</a
+              >
+              <a class="dropdown-item" href="#"
+                ><i class="ti-user m-r-0-5"></i> Profile</a
+              >
+              <a class="dropdown-item" href="#"
+                ><i class="ti-settings m-r-0-5"></i> Settings</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#"
+                ><i class="ti-help m-r-0-5"></i> Help</a
+              >
+              <a class="dropdown-item" href="#"
+                ><i class="ti-power-off m-r-0-5"></i> Sign out</a
+              >
+            </div>
+          </li>
+          <li class="nav-item navbar-sidebar">
+            <a class="nav-link " href="#"><i class="ti-arrow-left"></i> </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <section
+          class="col-md-12 alert alert-primary changepassword-alert d-flex flex-column align-items-center mt-5"
+          role="alert"
+        >
+          <h2 class="mb-3">
+            ¡Bienvenidos!
+          </h2>
+          <p>
+            Por medida de seguridad y para tener una mejor experiencia de
+            usuario, debes completar las siguientes acciones .
+          </p>
+        </section>
+        <section class="col-md-12 mt-3 changepassword-content">
+          <h2 class="mb-4">
+            Cambio de contraseña/ Registrar empresa
+          </h2>
+          <div class="changepassword-form">
+            <div id="wizard-validator" class="wizard">
+              <ul class="wizard-steps" role="tablist">
+                <li class="active" role="tab">
+                  Por favor, cambia tu contraseña
+                </li>
+                <li role="tab">
+                  Por favor, registra una empresa
+                </li>
+              </ul>
+              <form id="cambiarcontraseña-form" class="form-horizontal">
+                <div class="wizard-content">
+                  <div class="wizard-pane active" role="tabpanel">
+                    <div class="row">
+                      <div class="col-md-12 d-flex wizard-pane-infocliente">
+                        <div class="form-group col-md-4 col-sm-12 ">
+                          <label  for="passwordactual">Contraseña Actual</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            name="passwordactual"
+                            placeholder="Contraseña Actual"
+                          />
+                        </div>
+                        <div class="form-group col-md-4 col-sm-12">
+                          <label for="passwordnueva"
+                            >Nueva Contraseña</label
+                          >
+                          <input
+                            type="password"
+                            class="form-control"
+                            name="passwordnueva"
+                            placeholder="Nueva Contraseña"
+                          />
+                        </div>
+                        <div class="form-group col-md-4 col-sm-12">
+                          <label for="passwordconfirmar"
+                            >Confirmar Contraseña</label
+                          >
+                          <input
+                            type="password"
+                            class="form-control"
+                            name="passwordconfirmar"
+                            placeholder="Confirmar Contraseña"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="wizard-pane" role="tabpanel">
+                    <div class="row">
+                      <div class="col-md-12 d-flex wizard-pane-infocliente">
+                        <div class="form-group col-md-4 col-sm-12">
+                          <label for="nombreempresa"
+                            >Nombre de la Empresa</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            name="nombreempresa"
+                            placeholder="Nombre de la empresa"
+                          />
+                        </div>
+                        <div class="form-group col-md-4 col-sm-12">
+                          <label for="nombredueño">Nombre del Dueño</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            name="nombredueño"
+                            placeholder="Nombre del Dueño"
+                          />
+                        </div>
+                        <div class="form-group col-md-4 col-sm-12">
+                          <label for="tlfdueño">Telefono del Dueño</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            name="tlfdueño"
+                            placeholder="Telefono del Dueño"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-12 d-flex wizard-pane-infocliente">
+                        <div class="form-group col-md-4 col-sm-12">
+                          <label for="correoempresa"
+                            >Correo de la Empresa</label
+                          >
+                          <input
+                            type="email"
+                            class="form-control"
+                            name="correoempresa"
+                            placeholder="Correo de la Empresa"
+                          />
+                        </div>
+                        <div class="form-group col-md-4 col-sm-12">
+                          <label for="tlfempresa">Teléfono de la Empresa</label>
+                          <input
+                            class="form-control"
+                            name="tlfempresa"
+                            placeholder="Teléfono de la Empresa"
+                          />
+                        </div>
+                        <div class="form-group col-md-4 col-sm-12">
+                          <label for="tlf2">Teléfono 2</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            name="tlf2"
+                            placeholder="Teléfono 2"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="form-group col-md-12 col-sm-12">
+                          <label for="direccionempresa"
+                            >Dirección de la Empresa</label
+                          >
+                          <textarea
+                            class="form-control"
+                            name="direccionempresa"
+                            rows="3"
+                          ></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+  <script src="../vendor/jquery/jquery-3.3.1.slim.min.js"></script>
+  <script src="../vendor/bootstrap/bootstrap.min.js"></script>
+  <script src="../vendor/bootstrap/bootstrap.min.js"></script>
+  <script src="../vendor/jquery-wizard/jquery-wizard.min.js"></script>
+  <script src="../vendor/jquery-wizard/formValidation.min.js"></script>
+  <script src="../vendor/jquery-wizard/bootstrap.min.js"></script>
+  <script src="assets/js/forms-wizard.js"></script>
+</html>

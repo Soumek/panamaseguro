@@ -1,0 +1,19 @@
+$primary-color: #17a2b8;
+$dark-color: #333333;
+$light-color: #f4f4f4;
+$danger-color: #dc3545;
+$success-color: #39b34a;
+
+//Grid
+$grid-breakpoints: (
+  // Extra small screen / phone
+    xs: 0,
+  // Small screen / phone
+    sm: 576px,
+  // Medium screen / tablet
+    md: 768px,
+  // Large screen / desktop
+    lg: 992px,
+  // Extra large screen / wide desktop
+    xl: 1200px
+);
