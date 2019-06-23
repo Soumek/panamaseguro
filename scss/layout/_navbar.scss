@@ -29,6 +29,10 @@
     .navbar-nav {
       height: 100%;
     }
+    .navbar-toggler {
+      color: white;
+      font-size: 1.5rem;
+    }
     .navbar-collapse {
       flex-grow: 0;
       height: 100%;
@@ -54,14 +58,63 @@
 }
 
 //Navbar mediaqueries
-@media screen and (max-width: 993px) {
+// @include media-query(map-get($grid-breakpoints, 'lg')) {
+//   // .user-navbar {
+//   //   &.navbar {
+//   //     .navbar-toggler {
+//   //       // display: none;
+//   //     }
+//   //     .navbar-collapse {
+//   //       flex-grow: 1;
+//   //       flex-basis: initial;
+//   //     }
+//   //     .navbar-nav {
+//   //       flex-direction: row;
+//   //       justify-content: space-evenly;
+//   //       // li {
+//   //       //   height: inherit;
+//   //       //   &.dropdown {
+//   //       //     position: inherit;
+//   //       //   }
+//   //       // }
+//   //       // div.dropdown-menu {
+//   //       //   position: absolute;
+//   //       //   top: 100%;
+//   //       //   left: 0;
+//   //       // }
+//   //     }
+//   //     .navbar-sidebar {
+//   //       border-left: inherit;
+//   //     }
+//   //   }
+//   // }
+// }
+
+@include media-query(map-get($grid-breakpoints, 'md')) {
   .user-navbar {
     &.navbar {
+      .navbar-toggler {
+        display: block;
+      }
+      .navbar-collapse {
+        flex-grow: 1;
+        flex-basis: 100%;
+      }
       .navbar-nav {
         flex-direction: row;
         justify-content: space-evenly;
         li {
           height: inherit;
+          &.dropdown {
+            position: inherit;
+          }
+        }
+        div.dropdown-menu {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          border: 1px solid #fff;
         }
       }
       .navbar-toggler {
@@ -76,4 +129,35 @@
       }
     }
   }
+
+  // .user-navbar {
+  //   &.navbar {
+  //     .navbar-nav {
+  //       // flex-direction: row;
+  //       // justify-content: space-evenly;
+  //       li {
+  //         // height: inherit;
+  //         &.dropdown {
+  //           position: inherit;
+  //         }
+  //       }
+  //       div.dropdown-menu {
+  //         position: absolute;
+  //         top: 100%;
+  //         left: 0;
+  //         width: 100%;
+  //       }
+  //     }
+  //     // .navbar-toggler {
+  //     //   color: white;
+  //     //   font-size: 1.5rem;
+  //     // }
+  //     // .nav-item {
+  //     //   align-items: flex-start;
+  //     // }
+  //     // .navbar-sidebar {
+  //     //   border-left: inherit;
+  //     // }
+  //   }
+  // }
 }
