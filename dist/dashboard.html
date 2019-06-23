@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="assets/themify-icons/themify-icons.css" />
     <link rel="stylesheet" href="assets/css/wizard.min.css" />
     <link rel="stylesheet" href="assets/css/formValidation.min.css" />
+    <link rel="stylesheet" href="assets/css/jsgrid.min.css" />
+    <link rel="stylesheet" href="assets/css/jsgrid-theme.min.css" />
     <link rel="stylesheet" href="assets/css/styles.min.css" />
     <title>Panamá Seguro</title>
   </head>
@@ -30,13 +32,66 @@
 
       <div class="collapse navbar-collapse " id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#"
+          <li class="nav-item notifications-dropdown-toggle">
+            <a
+              class="nav-link "
+              href="#"
+              role="button"
+              aria-controls="notificaciones"
+              data-toggle="collapse"
+              data-target="#notificaciones"
+              aria-haspopup="true"
+              aria-expanded="false"
               ><i class="ti-bell"></i>
               <span class="tag tag-danger top">9</span></a
             >
           </li>
-          <li class="nav-item dropdown">
+
+          <div
+            class="dropdown-menu dropdown-menu-right notifications-dropdown animated flipInY"
+            id="notificaciones"
+          >
+            <div class="m-item">
+              <div class="mi-icon bg-info"><i class="ti-comment"></i></div>
+              <div class="mi-text">
+                <a class="text-black" href="#">John Doe</a>
+                <span class="text-muted">commented post</span>
+                <a class="text-black" href="#">Lorem ipsum dolor</a>
+              </div>
+              <div class="mi-time">5 min ago</div>
+            </div>
+            <div class="m-item">
+              <div class="mi-icon bg-danger"><i class="ti-heart"></i></div>
+              <div class="mi-text">
+                <a class="text-black" href="#">John Doe</a>
+                <span class="text-muted">liked post</span>
+                <a class="text-black" href="#">Lorem ipsum dolor</a>
+              </div>
+              <div class="mi-time">15:07</div>
+            </div>
+            <div class="m-item">
+              <div class="mi-icon bg-purple"><i class="ti-user"></i></div>
+              <div class="mi-text">
+                <a class="text-black" href="#">John Doe</a>
+                <span class="text-muted">followed</span>
+                <a class="text-black" href="#">Kate Doe</a>
+              </div>
+              <div class="mi-time">yesterday</div>
+            </div>
+            <div class="m-item">
+              <div class="mi-icon bg-danger"><i class="ti-heart"></i></div>
+              <div class="mi-text">
+                <a class="text-black" href="#">John Doe</a>
+                <span class="text-muted">liked post</span>
+                <a class="text-black" href="#">Lorem ipsum dolor</a>
+              </div>
+              <div class="mi-time">3 days ago</div>
+            </div>
+            <a class="t-item text-black text-xs-center" href="#">
+              <strong>View all notifications</strong>
+            </a>
+          </div>
+          <li class="nav-item dropdown user-dropdown-toggle">
             <a
               class="nav-link "
               href="#"
@@ -52,7 +107,7 @@
               </div>
             </a>
             <div
-              class="dropdown-menu animated flipInY"
+              class="dropdown-menu  user-dropdown animated flipInY"
               id="navbarDropdown"
               aria-labelledby="navbarDropdown"
             >
@@ -80,23 +135,93 @@
         </ul>
       </div>
     </nav>
-    <div class="container-fluid">
+    <div class="container-fluid dashboard-header-container">
       <div class="row">
+        <div class="col-md-12">
+          <div class="mt-4 ml-4 dashboard-header-title">
+            <h4>Dashboard</h4>
+            <h5>Home</h5>
+          </div>
+        </div>
         <section
-          class="col-md-12 changepassword-heading d-flex flex-column align-items-center"
-          role="alert"
+          class="col-md-12 dashboard-header d-flex flex-column align-items-center"
         >
           <h2 class="mb-3">
-            ¡Bienvenidos!
+            ¡Bienvenido a Panamá Seguro!
           </h2>
           <p>
-            Por medida de seguridad y para tener una mejor experiencia de
-            usuario, debes completar las siguientes acciones .
+            Ya estas listo para acceder a las funciones principales.
           </p>
         </section>
       </div>
     </div>
-    <div class="container changepassword-container">
+    <div class="container dashboard-container">
+      <div class="row dashboard-content">
+        <section class="col-md-12 dashboard-menu-container">
+          <div class="d-flex dashboard-menu " id="dashboard-menu" tabindex="1">
+            <div class="row">
+              <div class="col-md-3 dashboard-menu-item"          
+              role="button"
+              aria-controls="dog"
+              data-toggle="collapse"
+              data-target="#dropdown-choferes"
+              aria-haspopup="true"
+              aria-expanded="false"" >
+              
+                <i class="ti-bell"></i> <span>Choferes</span>
+              </div>
+              <div class="col-md-3 dashboard-menu-item"
+              role="button"
+              aria-controls="dog"
+              data-toggle="collapse"
+              data-target="#dropdown-panama"
+              aria-haspopup="true"
+              aria-expanded="false">
+                <i class="ti-bell"></i> <span>Panamá Seguro</span>
+              </div>
+              <div class="col-md-3 dashboard-menu-item">
+                <i class="ti-bell"></i> <span>Roles y Usuarios</span>
+              </div>
+              <div class="col-md-3 dashboard-menu-item dashboard-menu-item-last">
+                <i class="ti-briefcase"></i> <span>Empresas / Afiliados</span>
+              </div>
+              <div class="dropdown-dashboard-menu animated slideInDown" id="dropdown-choferes" data-parent="#dashboard-menu" >
+                  <a class="btn btn-primary outlined" href="#">Choferes Reportados</a>
+                  <a class="btn btn-primary outlined" href="#">Reportar Chofer</a>
+                  <a class="btn btn-primary outlined" href="#">Registrar Chofer</a>
+              </div>
+              <div class="dropdown-dashboard-menu animated slideInDown" id="dropdown-panama" data-parent="#dashboard-menu">
+                    <a class="btn btn-primary outlined" href="#">Choferes Reporta2</a>
+                    <a class="btn btn-primary outlined" href="#">Reportar Chofer</a>
+                    <a class="btn btn-primary outlined" href="#">Registrar Chofer</a>
+            </div>
+            </div>
+            
+          </div>
+          
+        </section>
+        <section class="col-md-12 dashboard-home">
+            <div class="row">
+                    <div class="col-md-6 mb-4">
+                            <h2>
+                                    Últimos Choferes Consultados
+                                  </h2>      
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-end align-items-center">
+                            <button class="btn btn-secondary">
+                                Consultar Chofer
+                            </button>    
+                    </div>       
+            </div>
+            
+                <div id="jsGrid-basic">
+                  
+                </div>
+              </section>
+        
+      </div>
+    </div>
+    <!-- <div class="container changepassword-container">
       <div class="row">
         <section class="col-md-12  changepassword-content">
           <h2 class="mb-4">
@@ -232,7 +357,7 @@
           </div>
         </section>
       </div>
-    </div>
+    </div> -->
   </body>
   <script src="../vendor/jquery/jquery-3.3.1.slim.min.js"></script>
   <script src="../vendor/bootstrap/bootstrap.min.js"></script>
@@ -240,5 +365,8 @@
   <script src="../vendor/jquery-wizard/jquery-wizard.min.js"></script>
   <script src="../vendor/jquery-wizard/formValidation.min.js"></script>
   <script src="../vendor/jquery-wizard/bootstrap.min.js"></script>
-  <script src="assets/js/changepassword.js"></script>
+  <script src="../vendor/jsgrid/jsgrid.min.js"></script>
+  <script src="../vendor/jsgrid/demos/db.js"></script>
+  <script src="assets/js/dashboard.js"></script>
+  <script src="assets/js/tables-jsgrid.js"></script>
 </html>

@@ -1,0 +1,110 @@
+.dashboard-header {
+  padding: 2.5rem 1.25rem;
+  height: auto;
+  border: inherit;
+  border-radius: 0;
+  margin: 0;
+  color: #fff;
+  h2 {
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+
+    text-align: center;
+    font-weight: 300;
+  }
+  &-container {
+    height: 45vh;
+    background-color: #4d4d4d;
+  }
+  &-title {
+    color: #c6c6c6;
+  }
+}
+
+.dashboard {
+  &-container {
+    position: relative;
+  }
+  &-content {
+    position: absolute;
+    top: -75px;
+    width: 100%;
+    section.dashboard-menu-container {
+      padding: 0;
+    }
+  }
+  &-home {
+    background-color: #fff;
+    margin-top: 2rem;
+    padding: 2rem;
+  }
+  &-menu {
+    position: relative;
+    > .row {
+      width: 100%;
+      margin: 0;
+    }
+
+    .dashboard-menu-item {
+      background-color: #fff;
+      padding: 2.5rem;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-right: 1px solid #d9d9d9;
+      border-bottom: 1px solid #d9d9d9;
+      color: $primary-color;
+      &-last {
+        border-right: inherit;
+      }
+      &:hover {
+        color: #fff;
+        background-color: #3a6fcd;
+      }
+      i {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+      }
+    }
+    .dropdown-dashboard-menu {
+      transition-duration: 0s;
+      &.animated {
+        animation-duration: 0.5s;
+        animation-fill-mode: inherit;
+      }
+      &.slideInDown {
+        @keyframes slideInDown {
+          0% {
+            -webkit-transform: translate3d(0, -30%, 0);
+            transform: translate3d(0, -30%, 0);
+            visibility: visible;
+          }
+
+          to {
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+          }
+        }
+      }
+      &:not(.show) {
+        display: none;
+      }
+      a {
+        margin-right: 1rem;
+        padding: 0.5rem 1rem;
+        border-radius: 0;
+        font-weight: bold;
+      }
+      position: relative;
+      width: 100%;
+      background-color: #fff;
+      padding: 2rem;
+    }
+  }
+}

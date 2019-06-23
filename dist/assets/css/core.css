@@ -552,47 +552,7 @@ a:active {
 }
 
 /* Messages */
-.site-header .dropdown-messages {
-  padding: 0;
-  min-width: 300px;
-}
 
-.site-header .dropdown-messages .m-item {
-  display: block;
-  position: relative;
-  padding: 0.75rem 1rem 0.75rem 4rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-}
-
-.site-header .dropdown-messages .m-item:last-child {
-  border-bottom: none;
-}
-
-.site-header .dropdown-messages .m-item {
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-.site-header .dropdown-messages .m-item .mi-icon {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  font-size: 0.75rem;
-  text-align: center;
-  border-radius: 50%;
-}
-
-.site-header .dropdown-messages .m-item .mi-text {
-  color: #999;
-}
-
-.site-header .dropdown-messages .m-item .mi-time {
-  font-size: 90%;
-  color: #999;
-}
 
 /* =================================================================
   Sidebar second

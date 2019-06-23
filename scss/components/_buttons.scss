@@ -1,0 +1,22 @@
+// Buttons//
+
+.btn {
+  &-primary {
+    color: $primary-color;
+    border: 1px solid $primary-color;
+  }
+  &-secondary {
+    color: black;
+    border: 1px solid $secondary-color;
+    background-color: $secondary-color;
+    &:hover {
+      color: black;
+      border: 2px solid darken($secondary-color, 20%);
+      background-color: $secondary-color;
+    }
+  }
+}
+//outline buttons//
+.outlined {
+  background-color: transparent;
+}
