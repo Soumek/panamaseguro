@@ -51,6 +51,7 @@
 
     .dashboard-menu-item {
       background-color: #fff;
+      z-index: 10;
       padding: 2.5rem;
       cursor: pointer;
       display: flex;
@@ -64,6 +65,10 @@
         border-right: inherit;
       }
       &:hover {
+        color: #fff;
+        background-color: #3a6fcd;
+      }
+      &-active {
         color: #fff;
         background-color: #3a6fcd;
       }
