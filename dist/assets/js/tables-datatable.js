@@ -4,18 +4,20 @@ $(document).ready(function() {
     ================================================================= */
 
   $('#table-1').DataTable({
+    dom: '<"col-md-12"t><"row"<"col-md-12 col-12"p>>',
+
     searching: false,
     ordering: false,
     info: false,
     lengthChange: false,
-    scrollY: '200px',
+    scrollY: '300px',
     scrollCollapse: true,
     language: {
       paginate: {
         first: 'Primera',
         last: 'Última',
         next: 'Siguiente',
-        previous: 'Anterior'
+        previous: 'Atrás'
       }
     }
   });
