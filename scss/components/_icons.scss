@@ -1,0 +1,38 @@
+.icon {
+  display: inline-block;
+  font-size: 0;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.icon-lg {
+  width: 75px;
+  height: 75px;
+}
+
+.icon-home {
+  background-image: icon(home, blue);
+}
+.icon-heart {
+  background-image: icon(heart, red);
+}
+.icon-star {
+  background-image: icon(star, yellow);
+}
+.icon-suitcase {
+  background-image: icon(suitcase, yellow);
+}
+
+.icon-home-stroke {
+  background-image: icon(home, transparent, blue, 1);
+}
+.icon-heart-stroke {
+  background-image: icon(heart, transparent, red, 1);
+}
+.icon-star-stroke {
+  background-image: icon(star, transparent, yellow, 1);
+}
