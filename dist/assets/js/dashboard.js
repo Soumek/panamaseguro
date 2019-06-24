@@ -37,12 +37,6 @@ $(document).ready(function() {
   //   $('#dashboard-menu-panama').focusout(function() {
   //     $('#dropdown-panama').collapse('hide');
   //   });
-  $('.notifications-dropdown-toggle').focusout(function() {
-    $('.notifications-dropdown').collapse('hide');
-  });
-  $('.user-dropdown-toggle').focusout(function() {
-    $('.user-dropdown').collapse('hide');
-  });
 
   //   $('#dropdown-choferes').on('show.bs.collapse', function(e) {
   //     let parent = e.target.dataset.parent;

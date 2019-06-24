@@ -113,3 +113,27 @@
     }
   }
 }
+
+//datatable
+.table-container {
+  .row {
+    width: 100%;
+  }
+
+  .dataTables_scrollBody::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #fff;
+  }
+
+  .dataTables_scrollBody::-webkit-scrollbar {
+    width: 12px;
+    background-color: #f5f5f5;
+  }
+
+  .dataTables_scrollBody::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #e3e3e3;
+  }
+  .dataTables_scrollBody {
+  }
+}
