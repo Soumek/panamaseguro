@@ -1,0 +1,33 @@
+.dashboard-header {
+  &-container {
+    &.reportar-chofer {
+      height: 30vh;
+    }
+  }
+  &-title {
+    &-container {
+      &.reportar-chofer {
+        padding: 0;
+      }
+    }
+  }
+}
+.dashboard {
+  &-content {
+    &.reportar-chofer {
+      top: -150px;
+    }
+  }
+}
+.reportar-chofer {
+  &-filter {
+    input {
+      width: 80%;
+      padding: 1.5rem 1rem;
+    }
+    button {
+      padding: 0.5rem 3rem;
+      height: 44px;
+    }
+  }
+}

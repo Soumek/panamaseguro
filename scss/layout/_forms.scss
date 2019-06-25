@@ -1,2 +1,12 @@
 .form-control {
+  border-radius: 0;
+  box-shadow: none;
+  border-color: rgba(0, 0, 0, 0.15);
+  &:hover {
+    border-color: rgba(0, 0, 0, 0.15);
+  }
+  &:focus {
+    box-shadow: none;
+    border-color: rgba(0, 0, 0, 0.15);
+  }
 }

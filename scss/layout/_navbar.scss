@@ -154,7 +154,8 @@
             position: inherit;
           }
         }
-        div.user-dropdown {
+        div.user-dropdown,
+        div.notifications-dropdown {
           position: absolute;
 
           top: 100%;

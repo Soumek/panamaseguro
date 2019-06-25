@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/themify-icons/themify-icons.css" />
     <link rel="stylesheet" href="../vendor/pe7-icons/assets/Pe-icon-7-stroke.css">
     <link rel="stylesheet" href="../vendor/material-design-iconic-font/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="../vendor/DataTables/css/jquery.dataTables.min.css">
     <link rel="stylesheet" href="../vendor/DataTables/css/dataTables.bootstrap4.min.css">
 		<link rel="stylesheet" href="../vendor/DataTables/Responsive/css/responsive.bootstrap4.min.css">
 		<link rel="stylesheet" href="../vendor/DataTables/Buttons/css/buttons.dataTables.min.css">
@@ -174,7 +175,7 @@
                 tabindex="1"
               >
                 <!-- <i class="ti-bell"></i> -->
-                  <i class="icon icon-suitcase"></i>
+                  <i class="ti-bell"></i>
                 <span>Choferes</span> 
               </div>
               <div
@@ -223,7 +224,7 @@
                 <a class="btn btn-primary outlined" href="#"
                   >Choferes Reportados</a
                 >
-                <a class="btn btn-primary outlined" href="#">Reportar Chofer</a>
+                <a class="btn btn-primary outlined" href="reportarchofer.html">Reportar Chofer</a>
                 <a class="btn btn-primary outlined" href="#"
                   >Registrar Chofer</a
                 >
@@ -284,7 +285,7 @@
             </div>
             <div class="col-md-12 table-container">
                 
-                    <table class="table  table-bordered dataTable" id="table-1">
+                    <table class="table  table-bordered  hover dataTable" id="table-1">
                         <thead>
                             <tr>
                                 <th>Cédula Chofer</th>
@@ -299,21 +300,38 @@
                                 <td>15.353.323</td>
                                 <td>José María Palacio Blanco </td>
                                 <td>Win 95+</td>
-                                <td>10</td>
+                                <td><div class="row">
+                                  <div class="col-md-12 mb-3 text-center ">
+                                    <span class="contract-confirm">¿Usted ha contratado a este chofer?</span>
+                                  </div>
+                                  <div class="col-md-6 text-center">
+                                    <button type="button" class="btn btn-success btn-sm label-left b-a-0 waves-effect waves-light">
+                                      <span class="btn-label"><i class="ti-check"></i></span>
+                                      SÍ
+                                    </button>
+                                  </div>
+                                  <div class="col-md-6 text-center">
+                                    
+                                    <button type="button" class="btn btn-danger btn-sm label-left b-a-0 waves-effect waves-light">
+                                      <span class="btn-label"><i class="ti-close"></i></span>
+                                      NO
+                                    </button>
+                                  </div>
+                                </div>  </td>
                                 
                             </tr>
                             <tr>
                                 <td>15.353.323</td>
                                 <td>José María Palacio Blanco </td>
                                 <td>Win 95+</td>
-                                <td><div class="contract-btn-container"><button class="btn btn-danger" type="button"><i class="ti-close"></i></button></div></td>
+                                <td><div class="contract-btn-container"><button class="btn btn-danger static btn-static" type="button"><i class="ti-close"></i></button></div></td>
                                
                             </tr>
                             <tr>
                                 <td>15.353.323</td>
                                 <td>José María Palacio Blanco </td>
                                 <td>Win 95+</td>
-                                <td><div class="contract-btn-container"><button class="btn btn-success" type="button"><i class="ti-check"></i></button></div></td>
+                                <td><div class="contract-btn-container"><button class="btn btn-success static btn-static" type="button"><i class="ti-check"></i></button></div></td>
                                 
                             </tr>
                             <tr>
