@@ -1,3 +1,5 @@
+// Estilos globales del dashboard de usuario, cualquier cambio especifico se deberia llevar aqui por orden,
+// en este caso home es diferente a los demas por tanto se indica el cambio
 .dashboard-header {
   padding: 2.5rem 1.25rem;
   height: auto;
@@ -17,11 +19,15 @@
     font-weight: 300;
   }
   &-container {
-    height: 45vh;
+    height: 30vh;
     background-color: #4d4d4d;
   }
   &-title {
+    padding: 0;
     color: #c6c6c6;
+  }
+  &-container.home {
+    height: 45vh;
   }
 }
 
@@ -31,12 +37,17 @@
   }
   &-content {
     position: absolute;
-    top: -75px;
+    top: -150px;
     width: 100%;
+  }
+  &-content.home {
+    top: -75px;
+
     section.dashboard-menu-container {
       padding: 0;
     }
   }
+
   &-home {
     background-color: #fff;
     margin-top: 2rem;
@@ -46,16 +57,31 @@
       padding: 0.75rem;
     }
   }
-  &-menu {
-    position: relative;
+  &-menu-wrapper {
     > .row {
       width: 100%;
       margin: 0;
+      > .col-md-12 {
+        padding: 0;
+        .navbar {
+          padding: 0;
+        }
+      }
+    }
+    .dashboard-menu {
+      width: 100%;
+      > .nav-item {
+        padding: 0;
+        z-index: 10;
+        .nav-link {
+          border-top: inherit;
+          border-left: inherit;
+        }
+      }
     }
 
     .dashboard-menu-item {
       background-color: #fff;
-      z-index: 10;
       padding: 2.5rem;
       cursor: pointer;
       display: flex;
@@ -64,17 +90,22 @@
       align-items: center;
       border-right: 1px solid #d9d9d9;
       border-bottom: 1px solid #d9d9d9;
+      border-radius: 0;
       color: $primary-color;
       &-last {
         border-right: inherit;
       }
       &:hover {
-        color: #fff;
-        background-color: #3a6fcd;
+        color: $primary-color;
+        background-color: #f5f5f5;
       }
       &-active {
         color: #fff;
         background-color: #3a6fcd;
+        &:hover {
+          color: #fff;
+          background-color: #3a6fcd;
+        }
       }
       i {
         font-size: 2.5rem;
@@ -82,38 +113,17 @@
       }
     }
     .dropdown-dashboard-menu {
-      transition-duration: 0s;
-      &.animated {
-        animation-duration: 0.5s;
-        animation-fill-mode: inherit;
-      }
-      &.slideInDown {
-        @keyframes slideInDown {
-          0% {
-            -webkit-transform: translate3d(0, -30%, 0);
-            transform: translate3d(0, -30%, 0);
-            visibility: visible;
-          }
-
-          to {
-            -webkit-transform: translateZ(0);
-            transform: translateZ(0);
-          }
-        }
-      }
-      &:not(.show) {
-        display: none;
-      }
-      a {
-        margin-right: 1rem;
-        padding: 0.5rem 1rem;
-        border-radius: 0;
-        font-weight: bold;
-      }
-      position: relative;
+      margin: 0;
+      z-index: initial;
+      position: initial;
+      border: inherit;
       width: 100%;
-      background-color: #fff;
       padding: 2rem;
+      a {
+        border-radius: 0;
+        margin-right: 1rem;
+        padding: 0.7rem 1rem;
+      }
     }
   }
 }

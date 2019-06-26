@@ -1,24 +1,5 @@
-.dashboard-header {
-  &-container {
-    &.reportar-chofer {
-      height: 30vh;
-    }
-  }
-  &-title {
-    &-container {
-      &.reportar-chofer {
-        padding: 0;
-      }
-    }
-  }
-}
-.dashboard {
-  &-content {
-    &.reportar-chofer {
-      top: -150px;
-    }
-  }
-}
+//Esta página hereda estilos de _dashboard.sccs, cualquier cambio a los estilos de dashboard
+// o dashboardheader deben ser indicados allá
 .reportar-chofer {
   &-filter {
     input {
