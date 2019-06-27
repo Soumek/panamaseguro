@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="assets/css/core.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" href="assets/themify-icons/themify-icons.css" />
+    <link rel="stylesheet" href="../vendor/pe7-icons/assets/Pe-icon-7-stroke.css" />
+    <link rel="stylesheet" href="../vendor/material-design-iconic-font/css/material-design-iconic-font.min.css" />
+    <link rel="stylesheet" href="assets/css/styles.min.css" />
+    <title>Panamá Seguro</title>
+</head>
+
+<body>
+    <nav class="navbar user-navbar navbar-expand-md fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Panamá <span>Seguro</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="ti-menu"></i>
+        </button>
+
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item notifications-dropdown-toggle">
+                    <a class="nav-link " href="#" role="button" aria-controls="notificaciones" data-toggle="dropdown"
+                        data-target="#notificaciones" aria-haspopup="true" aria-expanded="false"><i class="ti-bell"></i>
+                        <span class="tag tag-danger top">9</span></a>
+                </li>
+
+                <div class="dropdown-menu dropdown-menu-right notifications-dropdown animated slideInUp"
+                    id="notificaciones" aria-labelledby="notificaciones">
+                    <div class="m-item">
+                        <div class="mi-icon bg-info"><i class="ti-comment"></i></div>
+                        <div class="mi-text">
+                            <a class="text-black" href="#">John Doe</a>
+                            <span class="text-muted">commented post</span>
+                            <a class="text-black" href="#">Lorem ipsum dolor</a>
+                        </div>
+                        <div class="mi-time">5 min ago</div>
+                    </div>
+                    <div class="m-item">
+                        <div class="mi-icon bg-danger"><i class="ti-heart"></i></div>
+                        <div class="mi-text">
+                            <a class="text-black" href="#">John Doe</a>
+                            <span class="text-muted">liked post</span>
+                            <a class="text-black" href="#">Lorem ipsum dolor</a>
+                        </div>
+                        <div class="mi-time">15:07</div>
+                    </div>
+                    <div class="m-item">
+                        <div class="mi-icon bg-purple"><i class="ti-user"></i></div>
+                        <div class="mi-text">
+                            <a class="text-black" href="#">John Doe</a>
+                            <span class="text-muted">followed</span>
+                            <a class="text-black" href="#">Kate Doe</a>
+                        </div>
+                        <div class="mi-time">yesterday</div>
+                    </div>
+                    <div class="m-item">
+                        <div class="mi-icon bg-danger"><i class="ti-heart"></i></div>
+                        <div class="mi-text">
+                            <a class="text-black" href="#">John Doe</a>
+                            <span class="text-muted">liked post</span>
+                            <a class="text-black" href="#">Lorem ipsum dolor</a>
+                        </div>
+                        <div class="mi-time">3 days ago</div>
+                    </div>
+                    <a class="t-item text-black text-xs-center" href="#">
+                        <strong>View all notifications</strong>
+                    </a>
+                </div>
+                <li class="nav-item dropdown user-dropdown-toggle">
+                    <a class="nav-link " href="#" role="button" aria-controls="navbarDropdown" data-toggle="dropdown"
+                        data-target="#navbarDropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="avatar box-48">
+                            <img src="assets/img/1.jpg" alt="" />
+                        </div>
+                    </a>
+                    <div class="dropdown-menu  user-dropdown animated flipInY" id="navbarDropdown"
+                        aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#"><i class="ti-email m-r-0-5"></i> Inbox</a>
+                        <a class="dropdown-item" href="#"><i class="ti-user m-r-0-5"></i> Profile</a>
+                        <a class="dropdown-item" href="#"><i class="ti-settings m-r-0-5"></i> Settings</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"><i class="ti-help m-r-0-5"></i> Help</a>
+                        <a class="dropdown-item" href="#"><i class="ti-power-off m-r-0-5"></i> Sign out</a>
+                    </div>
+                </li>
+                <li class="nav-item navbar-sidebar">
+                    <a class="nav-link " href="#"><i class="ti-arrow-left"></i> </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid dashboard-header-container ">
+        <div class="row"></div>
+    </div>
+
+    <div class="container dashboard-container ">
+        <div class="row dashboard-content">
+            <div class="col-md-12 mb-3 dashboard-header-title-container ">
+                <div class="dashboard-header-title">
+                    <h4>Dashboard</h4>
+                    <h5>Home</h5>
+                </div>
+            </div>
+            <section class="col-md-12 dashboard-menu-container">
+                <div class="d-flex dashboard-menu-wrapper" tabindex="1">
+                    <div class="row ">
+                        <div class="col-md-12 ">
+                            <nav class="navbar">
+                                <ul class="nav dashboard-menu">
+                                    <li class="nav-item dropdown col-md-3 col-sm-3  ">
+                                        <a class="nav-link dashboard-menu-item" href="#" id="dashboard-menu-choferes"
+                                            aria-controls="dropdown-choferes" data-target="#dropdown-choferes"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                                                class="ti-bell"></i>
+                                            <span>Choferes</span> </a>
+                                    </li>
+                                    <li class="nav-item col-md-3 col-sm-3">
+                                        <a class="nav-link dashboard-menu-item" href="#" id="dashboard-menu-panama"
+                                            aria-controls="dropdown-panama" data-target="#dropdown-panama"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                                                class="zmdi zmdi-shield-check"></i> <span>Panamá
+                                                Seguro</span> </a>
+                                    </li>
+                                    <li class="nav-item col-md-3 col-sm-3">
+                                        <a class="nav-link dashboard-menu-item" href="#" id="dashboard-menu-usuarios"
+                                            aria-controls="dropdown-usuarios" data-target="#dropdown-usuarios"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                                                class="pe-7s-users"></i> <span>Roles y
+                                                Usuarios</span> </a>
+                                    </li>
+                                    <li class="nav-item col-md-3 col-sm-3">
+                                        <a class="nav-link dashboard-menu-item dashboard-menu-item-last" href="#"
+                                            id="dashboard-menu-empresas" aria-controls="dropdown-empresas"
+                                            data-target="#dropdown-empresas" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false"><i class="ti-briefcase"></i>
+                                            <span>Empresas / Afiliados</span> </a>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                        </div>
+                        <div class="col-md-12">
+                            <div class="dropdown-menu dropdown-dashboard-menu animated slideInDown"
+                                id="dropdown-choferes" aria-labelledby="dropdown-choferes">
+                                <a class="btn btn-primary outlined" href="consultarchofer.html">Choferes Reportados</a>
+                                <a class="btn btn-primary outlined" href="reportarchofer.html">Reportar Chofer</a>
+                                <a class="btn btn-primary outlined" href="registrarchofer.html">Registrar Chofer</a>
+                            </div>
+                            <div class="dropdown-menu dropdown-dashboard-menu animated slideInDown" id="dropdown-panama"
+                                aria-labelledby="dropdown-panama">
+                                <a class="btn btn-primary outlined" href="#">Choferes Reportados2</a>
+                                <a class="btn btn-primary outlined" href="reportarchofer.html">Reportar Chofer</a>
+                                <a class="btn btn-primary outlined" href="#">Registrar Chofer</a>
+                            </div>
+                            <div class="dropdown-menu dropdown-dashboard-menu animated slideInDown"
+                                id="dropdown-usuarios" aria-labelledby="dropdown-usuarios">
+                                <a class="btn btn-primary outlined" href="#">Choferes Reportados3</a>
+                                <a class="btn btn-primary outlined" href="reportarchofer.html">Reportar Chofer</a>
+                                <a class="btn btn-primary outlined" href="#">Registrar Chofer</a>
+                            </div>
+                            <div class="dropdown-menu dropdown-dashboard-menu animated slideInDown"
+                                id="dropdown-empresas" aria-labelledby="dropdown-empresas">
+                                <a class="btn btn-primary outlined" href="#">Choferes Reportados4</a>
+                                <a class="btn btn-primary outlined" href="reportarchofer.html">Reportar Chofer</a>
+                                <a class="btn btn-primary outlined" href="#">Registrar Chofer</a>
+                            </div>
+
+                        </div>
+                    </div>
+            </section>
+            <section class="col-md-12 dashboard-home">
+                <div class="row">
+                    <div class="col-md-12 mb-4">
+                        <div class="row">
+                            <div class="col-md-4  d-flex align-items-center">
+                                <h3>
+                                    Datos personales y de contacto
+                                </h3>
+                            </div>
+                            <div
+                                class="col-md-8 reportar-chofer-filter d-flex  justify-content-between  align-items-center">
+                                <input class="form-control" type="text"
+                                    placeholder="Ingresa el número de cédula del chofer a registrar" />
+                                <button class="btn btn-primary">
+                                    Buscar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <form action="#" method="post">
+                            <div class="form-row mb-5">
+                                <div class="form-group col-md-4 col-sm-12">
+                                    <label for="cedulachofer">Cédula del Chofer</label>
+                                    <input type="text" class="form-control" name="cedulachofer"
+                                        placeholder="Ingresa el número de cédula" />
+                                </div>
+                                <div class="form-group col-md-4 col-sm-12">
+                                    <label for="nombrechofer">Nombre del Chofer</label>
+                                    <input type="text" class="form-control" name="nombrechofer"
+                                        placeholder="Ingresa el nombre del chofer" />
+                                </div>
+                                <div class="form-group col-md-4 col-sm-12">
+                                    <label for="apellidochofer">Apellido del Chofer</label>
+                                    <input type="text" class="form-control" name="apellidochofer"
+                                        placeholder="Ingresa el apellido del chofer" />
+                                </div>
+
+                            </div>
+                            <div class="form-row mb-5">
+
+                                <div class="form-group col-md-4 col-sm-12">
+                                    <label for="tlfchofer">Número de Telefono</label>
+                                    <input type="text" class="form-control" name="tlfchofer"
+                                        placeholder="Ingrese el número de teléfono" />
+                                </div>
+                                <div class="form-group col-md-4 col-sm-12">
+                                    <label for="tlfchofer2">Telefono 2(opcional)</label>
+                                    <input type="text" class="form-control" name="tlfchofer2"
+                                        placeholder="Telefono 2" />
+                                </div>
+                                <div class="form-group col-md-4 col-sm-12">
+                                    <label for="tlfchofer3">Telefono 3(opcional)</label>
+                                    <input type="text" class="form-control" name="tlfchofer3"
+                                        placeholder="Telefono 3" />
+                                </div>
+
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-1 col-sm-12">
+                                    <label for="atrasochofer">Sexo</label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                            value="option1" checked>
+                                        <label class="form-check-label" for="gridRadios1">
+                                            Masculino
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
+                                            value="option2">
+                                        <label class="form-check-label" for="gridRadios2">
+                                            Femenino
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-2 col-sm-12 d-flex flex-column align-items-center">
+                                    <label for="contratochofer">Contratado</label>
+                                    <button class="btn btn-secondary " type="button" id="btn-contratado"><i
+                                            class="ti-check" id="icon-contratado"></i></button>
+                                </div>
+                                <div class="form-group col-md-9 col-sm-12 ">
+                                    <label for="direccionchofer">Dirección</label>
+                                    <input type="text" class="form-control" name="direccionchofer"
+                                        placeholder="Ingresa la dirección del chofer" />
+                                </div>
+                            </div>
+
+                            <div class=" d-flex justify-content-end mt-3">
+                                <button type="submit" class="btn btn-success">Enviar Reporte</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="../vendor/jquery/jquery-3.3.1.slim.min.js"></script>
+<script type="text/javascript" src="../vendor/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="../vendor/bootstrap/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="assets/js/dashboard.js"></script>
+<script type="text/javascript" src="assets/js/registrarchofer.js"></script>
+
+</html>

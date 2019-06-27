@@ -1,0 +1,16 @@
+.consultar-chofer {
+  p {
+    font-size: 1.1rem;
+    color: #838383;
+  }
+  .panelcarga {
+    display: none;
+    .loaderspinner {
+      width: 32px;
+      height: 32px;
+    }
+  }
+  .panelcargado {
+    display: none;
+  }
+}

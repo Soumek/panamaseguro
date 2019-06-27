@@ -20,7 +20,7 @@
   }
   &-container {
     height: 30vh;
-    background-color: #4d4d4d;
+    background-color: $secondary-color;
   }
   &-title {
     padding: 0;
@@ -57,6 +57,9 @@
       padding: 0.75rem;
     }
   }
+  &-menu-container {
+    padding: 0;
+  }
   &-menu-wrapper {
     > .row {
       width: 100%;
@@ -70,6 +73,7 @@
     }
     .dashboard-menu {
       width: 100%;
+
       > .nav-item {
         padding: 0;
         z-index: 10;
@@ -91,20 +95,20 @@
       border-right: 1px solid #d9d9d9;
       border-bottom: 1px solid #d9d9d9;
       border-radius: 0;
-      color: $primary-color;
+      color: $third-color;
       &-last {
         border-right: inherit;
       }
       &:hover {
-        color: $primary-color;
+        color: $third-color;
         background-color: #f5f5f5;
       }
       &-active {
-        color: #fff;
-        background-color: #3a6fcd;
+        color: $third-color;
+        background-color: $primary-color;
         &:hover {
-          color: #fff;
-          background-color: #3a6fcd;
+          color: $third-color;
+          background-color: $primary-color;
         }
       }
       i {
@@ -123,6 +127,7 @@
         border-radius: 0;
         margin-right: 1rem;
         padding: 0.7rem 1rem;
+        color: $third-color;
       }
     }
   }
@@ -136,7 +141,7 @@
   .table {
     tbody {
       td {
-        padding: 1.5rem 2rem;
+        // padding: 1.5rem 2rem;
         > div.contract-btn-container {
           text-align: center;
           .btn {
@@ -182,6 +187,7 @@
     border-radius: 10px;
     background-color: #e3e3e3;
   }
+
   .pagination {
     border-top: 1px solid #c9c9c9;
     width: calc(100% - 12px);
@@ -208,6 +214,13 @@
 }
 
 //Mobile
+@include media-query(map-get($grid-breakpoints, 'lg')) {
+  .table-container {
+    .pagination {
+      flex-wrap: wrap;
+    }
+  }
+}
 @include media-query(map-get($grid-breakpoints, 'md')) {
   .dashboard {
     &-menu {

@@ -2,18 +2,10 @@
 
 .btn {
   &-primary {
-    color: $primary-color;
-    border: 1px solid $primary-color;
+    @include custom-button($primary-color, $third-color);
   }
   &-secondary {
-    color: black;
-    border: 1px solid $secondary-color;
-    background-color: $secondary-color;
-    &:hover {
-      color: black;
-      border: 2px solid darken($secondary-color, 20%);
-      background-color: $secondary-color;
-    }
+    @include custom-button($secondary-color);
   }
   &-danger {
     background-color: $danger-color;
@@ -48,7 +40,7 @@
         box-shadow: none;
       }
       &:not(:disabled):not(.disabled):active,
-      &:not(:disabled):not(.disabled):active {
+      &:not(:disabled):not(.disabled):focus {
         background-color: $success-color;
       }
       &:active {

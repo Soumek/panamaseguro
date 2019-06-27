@@ -147,7 +147,7 @@
                 aria-labelledby="dropdown-choferes">
                 <a class="btn btn-primary outlined" href="consultarchofer.html">Choferes Reportados</a>
                 <a class="btn btn-primary outlined" href="reportarchofer.html">Reportar Chofer</a>
-                <a class="btn btn-primary outlined" href="#">Registrar Chofer</a>
+                <a class="btn btn-primary outlined" href="registrarchofer.html">Registrar Chofer</a>
               </div>
               <div class="dropdown-menu dropdown-dashboard-menu animated slideInDown" id="dropdown-panama"
                 aria-labelledby="dropdown-panama">
@@ -171,94 +171,70 @@
             </div>
           </div>
       </section>
-      <section class="col-md-12 dashboard-home">
+      <section class="col-md-12 dashboard-home consultar-chofer">
         <div class="row">
           <div class="col-md-12 mb-4">
-            <div class="row">
-              <div class="col-md-3  d-flex align-items-center">
+            <div class="row d-flex">
+              <div class="col-md-9  d-flex align-items-center">
                 <h3>
                   Consultar Chofer
                 </h3>
               </div>
-              <div class="col-md-9 reportar-chofer-filter d-flex  justify-content-between  align-items-center">
-                <input class="form-control" type="text" placeholder="12415340" />
-                <button class="btn btn-secondary">
-                  Buscar
-                </button>
+              <div class="col-md-3 d-flex justify-content-end">
+                <a class="btn btn-primary px-5 py-2" href="dashboard.html">
+                  Volver
+                </a>
               </div>
             </div>
+            <div class="row" id="consultarchofer">
+              <div class="col-md-12 d-flex justify-content-center mt-5 mb-5">
+                <p class="text-center">Por favor, revisa tu correo electrónico.<br />Hemos enviado una clave temporal
+                  para
+                  tu consulta.</p>
+              </div>
+              <div class="col-md-12">
+                <form action="#" method="post" id="consultarform">
+                  <div class="form-row">
+                    <div class="form-group col-md-4 col-sm-12">
+                      <label for="cedulaconsulta">Cédula del Chofer</label>
+                      <input type="text" class="form-control" name="cedulaconsulta" placeholder="Cédula del Chofer" />
+                    </div>
+                    <div class="form-group col-md-4 col-sm-12">
+                      <label for="clavetemporalconsulta">Clave Temporal</label>
+                      <input type="text" class="form-control" name="clavetemporalconsulta"
+                        placeholder="Clave Temporal" />
+                    </div>
+                    <div class="form-group col-md-4 col-sm-12 d-flex align-items-end">
+                      <button type="submit" class="btn btn-success w-100">Consultar</button>
+                    </div>
+                  </div>
+                </form>
+                <div class="col-md-12 d-flex justify-content-center mt-5">
+                  <p class="text-center">¿Aún no te llega la clave temporal?<a class="" href="#"> Reenviar clave</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="row panelcarga" id="panelcarga">
+              <div class="col-md-12 col-sm-12 d-flex justify-content-center ">
+                <img src="assets/img/loader.gif" class="loaderspinner" />
+                <h3> Cargando...</h3>
+              </div>
+
+            </div>
+            <div class="row panelcarga" id="paneldatoschofer">
+
+
+            </div>
           </div>
-          <div class="col-md-12">
-            <form action="#" method="post">
-
-
-              <div class="form-row">
-                <div class="form-group col-md-4 col-sm-12">
-                  <label for="nombrechofer">Nombre del Chofer</label>
-                  <input type="text" class="form-control" name="nombrechofer" placeholder="Jorge Alberto" disabled />
-                </div>
-                <div class="form-group col-md-4 col-sm-12">
-                  <label for="apellidochofer">Apellido del Chofer</label>
-                  <input type="text" class="form-control" name="apellidochofer" placeholder="Santana Piña" disabled />
-                </div>
-                <div class="form-group col-md-4 col-sm-12">
-                  <label for="tlfchofer">Telefonos del Chofer</label>
-                  <input type="text" class="form-control" name="tlfchofer" placeholder="3924699, 46433521" disabled />
-                </div>
-              </div>
-              <div class="form-row">
-
-                <div class="form-group col-md-6 col-sm-12">
-                  <label for="placachofer">Placa del Auto</label>
-                  <input type="text" class="form-control" name="correoempresa" placeholder="Placa del Auto" />
-                </div>
-                <div class="form-group col-md-6 col-sm-12">
-                  <label for="empresachofer">Empresa</label>
-                  <select id="empresachofer" class="form-control">
-                    <option selected>Seleccione...</option>
-                    <option>...</option>
-                    <option>...</option>
-                    <option>...</option>
-                  </select>
-                </div>
-
-              </div>
-              <div class="form-row">
-                <div class="form-group col-md-4 col-sm-12">
-                  <label for="deudachofer">Deuda de crédito</label>
-                  <input type="text" class="form-control" name="deudachofer" placeholder="Deuda de crédito" />
-                </div>
-                <div class="form-group col-md-4 col-sm-12">
-                  <label for="atrasochofer">Días de Atraso</label>
-                  <input type="text" class="form-control" name="atrasochofer" placeholder="Días de Atraso" />
-                </div>
-                <div class="form-group col-md-4 col-sm-12">
-                  <label for="montochofer">Monto Atrasado</label>
-                  <input type="text" class="form-control" name="montochofer" placeholder="Monto Atrasado" />
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group col-md-12 col-sm-12">
-                  <label for="motivoschofer">Motivos</label>
-                  <textarea class="form-control" name="motivoschofer" rows="3"
-                    placeholder="Ingresa al menos un motivo"></textarea>
-                </div>
-              </div>
-              <div class=" d-flex justify-content-end">
-                <button type="submit" class="btn btn-success">Enviar Reporte</button>
-              </div>
-            </form>
-
-          </div>
-        </div>
       </section>
     </div>
   </div>
 </body>
-<script type="text/javascript" src="../vendor/jquery/jquery-3.3.1.slim.min.js"></script>
+<script type="text/javascript" src="../vendor/jquery/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="../vendor/bootstrap/bootstrap.min.js"></script>
 <script type="text/javascript" src="../vendor/bootstrap/bootstrap.min.js"></script>
 
 <script type="text/javascript" src="assets/js/dashboard.js"></script>
+<script type="text/javascript" src="assets/js/consultarchofer.js"></script>
 
 </html>

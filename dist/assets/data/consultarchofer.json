@@ -1,0 +1,12 @@
+{
+  "cedula": "12415340",
+  "telefonos": ["3924699", "46433521", "46433531"],
+  "ultimasconsultas": [
+    { "empresa": "PS-T1", "fecha": "2018-04-27 15:19:47" },
+    { "empresa": "PS-T1", "fecha": "2018-04-28 12:19:47" },
+    { "empresa": "PS-T1", "fecha": "2018-04-29 17:19:47" },
+    { "empresa": "PS-T1", "fecha": "2018-04-30 20:19:47" }
+  ],
+  "empresaactual": "PS-T1",
+  "estado": "No Contratado"
+}
