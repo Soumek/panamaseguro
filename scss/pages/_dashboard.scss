@@ -25,6 +25,12 @@
   &-title {
     padding: 0;
     color: #c6c6c6;
+    a {
+      color: #c6c6c6;
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
   &-container.home {
     height: 45vh;

@@ -12,9 +12,18 @@ $(document).ready(function() {
         $('#consultarchofer').slideUp('slow');
         $('#panelcarga').slideDown('slow');
       },
+      error: function() {
+        setTimeout(function() {
+          $('#panelcarga').hide();
+          $('#consultarchoferalert').show();
+          $('#consultarchofer').slideDown('slow');
+        }, 3000);
+      },
       success: function(data) {
-        const contenedor =
-          '<div class="col-md-12 col-sm-12 d-flex justify-content-center "><div class="row"> </div></div>';
+        const datos = `<div class="col-md-12 col-sm-12 d-flex justify-content-center "><div class="row"><p>Cédula:${
+          data.cedula
+        } </p><p>Estado:${data.estado}</p></div></div>`;
+        $('#paneldatoschofer').append(datos);
         // data.map(datos => {
         //   return `<div class="col-md-12 col-sm-12 d-flex justify-content-center ">
         //      <div class="row">
