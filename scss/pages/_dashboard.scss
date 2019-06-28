@@ -126,8 +126,9 @@
     }
     .dropdown-dashboard-menu {
       margin: 0;
-      z-index: initial;
-      position: initial;
+      z-index: 9;
+      position: relative;
+      top: 0;
       border: inherit;
       width: 400%;
       padding: 2rem;
