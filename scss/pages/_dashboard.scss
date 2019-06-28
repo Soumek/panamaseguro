@@ -24,9 +24,9 @@
   }
   &-title {
     padding: 0;
-    color: #c6c6c6;
+    color: #fff;
     a {
-      color: #c6c6c6;
+      color: #fff;
       &:hover {
         text-decoration: none;
       }
@@ -82,7 +82,7 @@
 
       > .nav-item {
         padding: 0;
-        z-index: 10;
+
         .nav-link {
           border-top: inherit;
           border-left: inherit;
@@ -91,6 +91,8 @@
     }
 
     .dashboard-menu-item {
+      position: relative;
+      z-index: 10;
       background-color: #fff;
       padding: 2.5rem;
       cursor: pointer;
@@ -135,6 +137,21 @@
         padding: 0.7rem 1rem;
         color: $third-color;
       }
+      &.dropdown-panama,
+      &.dropdown-empresas,
+      &.dropdown-usuarios {
+        position: relative;
+        top: 0;
+      }
+      &.dropdown-panama {
+        left: -100%;
+      }
+      &.dropdown-usuarios {
+        left: -200%;
+      }
+      &.dropdown-empresas {
+        left: -300%;
+      }
     }
   }
 }
@@ -147,17 +164,18 @@
   .table {
     tbody {
       td {
-        // padding: 1.5rem 2rem;
+        padding: 0.7rem 1rem;
         > div.contract-btn-container {
           text-align: center;
           .btn {
             border-radius: 50%;
           }
         }
-        > div.row {
+        > div.confirmar-contrato-chofer {
           button {
-            width: 100px;
-            padding: 0.5rem;
+            width: 110px;
+            padding: 0.3rem 0.1rem;
+
             span {
               display: flex;
               align-items: center;

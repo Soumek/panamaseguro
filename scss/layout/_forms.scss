@@ -9,4 +9,7 @@
     box-shadow: none;
     border-color: rgba(0, 0, 0, 0.15);
   }
+  &::placeholder {
+    color: #bec0c2;
+  }
 }

@@ -21,6 +21,7 @@ $(document).ready(function() {
     $(`#${menu.dropdown}`).on('show.bs.dropdown', function() {
       $(`#${menu.id}`).addClass('dashboard-menu-item-active');
     });
+
     $(`#${menu.dropdown}`).on('hide.bs.dropdown', function() {
       $(`#${menu.id}`).removeClass('dashboard-menu-item-active');
     });

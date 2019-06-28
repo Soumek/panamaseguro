@@ -26,62 +26,62 @@
     <div class="collapse navbar-collapse " id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item notifications-dropdown-toggle">
-          <a class="nav-link " href="#" role="button" aria-controls="notificaciones" data-toggle="dropdown"
-            data-target="#notificaciones" aria-haspopup="true" aria-expanded="false"><i class="ti-bell"></i>
+          <a class="nav-link " href="#" role="button" role="button" data-toggle="dropdown" id="notificaciones-dropdown"
+            aria-haspopup="true" aria-expanded="false"><i class="ti-bell"></i>
             <span class="tag tag-danger top">9</span></a>
+          <div class="dropdown-menu dropdown-menu-right notifications-dropdown animated slideInUp"
+            aria-labelledby="notificaciones-dropdown">
+            <div class="m-item">
+              <div class="mi-icon bg-info"><i class="ti-comment"></i></div>
+              <div class="mi-text">
+                <a class="text-black" href="#">John Doe</a>
+                <span class="text-muted">commented post</span>
+                <a class="text-black" href="#">Lorem ipsum dolor</a>
+              </div>
+              <div class="mi-time">5 min ago</div>
+            </div>
+            <div class="m-item">
+              <div class="mi-icon bg-danger"><i class="ti-heart"></i></div>
+              <div class="mi-text">
+                <a class="text-black" href="#">John Doe</a>
+                <span class="text-muted">liked post</span>
+                <a class="text-black" href="#">Lorem ipsum dolor</a>
+              </div>
+              <div class="mi-time">15:07</div>
+            </div>
+            <div class="m-item">
+              <div class="mi-icon bg-purple"><i class="ti-user"></i></div>
+              <div class="mi-text">
+                <a class="text-black" href="#">John Doe</a>
+                <span class="text-muted">followed</span>
+                <a class="text-black" href="#">Kate Doe</a>
+              </div>
+              <div class="mi-time">yesterday</div>
+            </div>
+            <div class="m-item">
+              <div class="mi-icon bg-danger"><i class="ti-heart"></i></div>
+              <div class="mi-text">
+                <a class="text-black" href="#">John Doe</a>
+                <span class="text-muted">liked post</span>
+                <a class="text-black" href="#">Lorem ipsum dolor</a>
+              </div>
+              <div class="mi-time">3 days ago</div>
+            </div>
+            <a class="t-item text-black text-xs-center" href="#">
+              <strong>View all notifications</strong>
+            </a>
+          </div>
         </li>
 
-        <div class="dropdown-menu dropdown-menu-right notifications-dropdown animated slideInUp" id="notificaciones"
-          aria-labelledby="notificaciones">
-          <div class="m-item">
-            <div class="mi-icon bg-info"><i class="ti-comment"></i></div>
-            <div class="mi-text">
-              <a class="text-black" href="#">John Doe</a>
-              <span class="text-muted">commented post</span>
-              <a class="text-black" href="#">Lorem ipsum dolor</a>
-            </div>
-            <div class="mi-time">5 min ago</div>
-          </div>
-          <div class="m-item">
-            <div class="mi-icon bg-danger"><i class="ti-heart"></i></div>
-            <div class="mi-text">
-              <a class="text-black" href="#">John Doe</a>
-              <span class="text-muted">liked post</span>
-              <a class="text-black" href="#">Lorem ipsum dolor</a>
-            </div>
-            <div class="mi-time">15:07</div>
-          </div>
-          <div class="m-item">
-            <div class="mi-icon bg-purple"><i class="ti-user"></i></div>
-            <div class="mi-text">
-              <a class="text-black" href="#">John Doe</a>
-              <span class="text-muted">followed</span>
-              <a class="text-black" href="#">Kate Doe</a>
-            </div>
-            <div class="mi-time">yesterday</div>
-          </div>
-          <div class="m-item">
-            <div class="mi-icon bg-danger"><i class="ti-heart"></i></div>
-            <div class="mi-text">
-              <a class="text-black" href="#">John Doe</a>
-              <span class="text-muted">liked post</span>
-              <a class="text-black" href="#">Lorem ipsum dolor</a>
-            </div>
-            <div class="mi-time">3 days ago</div>
-          </div>
-          <a class="t-item text-black text-xs-center" href="#">
-            <strong>View all notifications</strong>
-          </a>
-        </div>
+
         <li class="nav-item dropdown user-dropdown-toggle">
-          <a class="nav-link " href="#" role="button" aria-controls="navbarDropdown" data-toggle="dropdown"
-            data-target="#navbarDropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link " href="#" role="button" data-toggle="dropdown" id="usuario-dropdown" aria-haspopup="true"
+            aria-expanded="false">
             <div class="avatar box-48">
               <img src="assets/img/1.jpg" alt="" />
             </div>
           </a>
-          <div class="dropdown-menu  user-dropdown animated flipInY" id="navbarDropdown"
-            aria-labelledby="navbarDropdown">
+          <div class="dropdown-menu  user-dropdown animated flipInY" aria-labelledby="usuario-dropdown">
             <a class="dropdown-item" href="#"><i class="ti-email m-r-0-5"></i> Inbox</a>
             <a class="dropdown-item" href="#"><i class="ti-user m-r-0-5"></i> Profile</a>
             <a class="dropdown-item" href="#"><i class="ti-settings m-r-0-5"></i> Settings</a>
@@ -145,9 +145,11 @@
             <div class="col-md-12">
               <div class="dropdown-menu dropdown-dashboard-menu animated slideInDown" id="dropdown-choferes"
                 aria-labelledby="dropdown-choferes">
-                <a class="btn btn-primary outlined" href="choferesreportados.html">Choferes Reportados</a>
-                <a class="btn btn-primary outlined" href="reportarchofer.html">Reportar Chofer</a>
+                <a class="btn btn-primary outlined" href="consultarchofer.html">Consultar Chofer</a>
                 <a class="btn btn-primary outlined" href="registrarchofer.html">Registrar Chofer</a>
+                <a class="btn btn-primary outlined" href="reportarchofer.html">Reportar Chofer</a>
+                <a class="btn btn-primary outlined" href="choferesreportados.html">Choferes
+                  Reportados</a>
               </div>
               <div class="dropdown-menu dropdown-dashboard-menu animated slideInDown" id="dropdown-panama"
                 aria-labelledby="dropdown-panama">
@@ -256,7 +258,7 @@
   </div>
 </body>
 <script type="text/javascript" src="../vendor/jquery/jquery-3.3.1.slim.min.js"></script>
-<script type="text/javascript" src="../vendor/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="../vendor/bootstrap/popper.min.js"></script>
 <script type="text/javascript" src="../vendor/bootstrap/bootstrap.min.js"></script>
 
 <script type="text/javascript" src="assets/js/dashboard.js"></script>

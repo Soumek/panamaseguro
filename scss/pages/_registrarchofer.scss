@@ -1,0 +1,10 @@
+.registrarchofer {
+  .btn-contratado {
+    &.contratado {
+      background-color: $secondary-color;
+    }
+    &.nocontratado {
+      background-color: #4d4d4d;
+    }
+  }
+}

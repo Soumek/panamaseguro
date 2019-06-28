@@ -3,6 +3,7 @@ $(document).ready(function() {
     $('#btn-contratado').addClass('animated swing');
     // $('#icon-contratado').removeClass('ti-check');
     // $('#icon-contratado').addClass('ti-close');
+    $('#btn-contratado').toggleClass('contratado nocontratado');
     $('#icon-contratado').toggleClass('ti-check ti-close');
     setTimeout(() => {
       $('#btn-contratado').removeClass('animated swing');
