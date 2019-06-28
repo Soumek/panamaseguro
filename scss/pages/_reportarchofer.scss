@@ -1,14 +1,25 @@
 //Esta página hereda estilos de _dashboard.sccs, cualquier cambio a los estilos de dashboard
 // o dashboardheader deben ser indicados allá
 .reportar-chofer {
+  &-filter-container {
+    padding-left: 3px;
+  }
+  &-title {
+    white-space: nowrap;
+  }
   &-filter {
     input {
-      width: 80%;
+      // width: 80%;
       padding: 1.5rem 1rem;
     }
     button {
-      padding: 0.5rem 3rem;
+      padding: 0.5rem 1.5rem;
       height: 44px;
+      display: flex;
+      align-items: center;
+      i {
+        font-size: 1.3rem;
+      }
     }
   }
 }
