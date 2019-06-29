@@ -27,7 +27,7 @@
   }
   &-success {
     background-color: $success-color;
-
+    border-radius: 0;
     &.static {
       border: none;
 
@@ -54,6 +54,10 @@
     &:active {
       box-shadow: none;
     }
+  }
+  &-light {
+    border: 1px solid #dbdbdb;
+    border-radius: 0;
   }
 }
 

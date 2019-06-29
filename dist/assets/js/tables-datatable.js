@@ -7,7 +7,7 @@ $(document).ready(function() {
     dom: '<"col-md-12"t><"row"<"col-md-12 col-12"p>>',
     responsive: true,
     searching: false,
-    ordering: false,
+    ordering: true,
     info: false,
     lengthChange: false,
     scrollY: '300px',

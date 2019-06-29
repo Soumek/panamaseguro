@@ -22,9 +22,21 @@
   &:hover {
     color: $color;
     border: 1px solid $third-color;
-    background-color: $background-color;
+    background-color: darken($background-color, 1%);
   }
-
+  &.disabled {
+    color: $third-color;
+    background-color: $background-color;
+    border: 1px solid $background-color;
+    &:hover {
+      background-color: lighten($color: $background-color, $amount: 5%);
+      border: 1px solid lighten($color: $background-color, $amount: 5%);
+    }
+    &:focus {
+      background-color: lighten($color: $background-color, $amount: 5%);
+      border: 1px solid lighten($color: $background-color, $amount: 5%);
+    }
+  }
   &:not(:disabled):not(.disabled):active,
   &:not(:disabled):not(.disabled):focus {
     background-color: $background-color;
@@ -35,4 +47,11 @@
   &:not(:disabled):not(.disabled):active:focus {
     box-shadow: none;
   }
+}
+
+//Psudo icons
+@mixin psudoicon($content, $type, $weight: 900) {
+  content: '#{$content}';
+  font-family: 'Font Awesome 5 #{$type}';
+  font-weight: $weight;
 }

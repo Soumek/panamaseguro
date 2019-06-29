@@ -1,0 +1,87 @@
+.table-container.choferes-reportados {
+  .row {
+    width: 99%;
+  }
+  table {
+    table-layout: fixed;
+    word-wrap: break-word;
+    tbody > tr.child > td > ul {
+      li {
+        &:last-child {
+          span.dtr-title {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .dataTables_wrapper.no-footer .dataTables_scrollBody {
+    table {
+      border-right: none;
+    }
+  }
+  .dataTables_wrapper.no-footer div.dataTables_scrollHead {
+    table {
+      border-right: none;
+    }
+  }
+
+  .pagination {
+    &:before {
+      display: none;
+    }
+    li.previous {
+      order: 3;
+    }
+    li.next {
+      order: 1;
+      margin-left: 1rem;
+    }
+    li {
+      order: 2;
+    }
+    li {
+      a {
+        border: inherit;
+      }
+    }
+  }
+}
+
+.modal {
+  .modal-dialog {
+    max-width: 600px;
+  }
+  .modal-content {
+    width: 600px;
+    border-radius: 0px;
+    .modal-body {
+      padding: 2rem 2rem;
+    }
+    .modal-footer {
+      button {
+        width: 125px;
+      }
+    }
+  }
+}
+
+@include media-query(map-get($grid-breakpoints, 'lg')) {
+  .table-container.choferes-reportados {
+    table.dataTable.dtr-inline.collapsed > tbody > tr > td:first-child {
+      &:before {
+        top: 65px;
+      }
+    }
+  }
+}
+@include media-query(map-get($grid-breakpoints, 'sm')) {
+  .table-container.choferes-reportados {
+    table.dataTable.dtr-inline.collapsed > tbody > tr > td:first-child {
+      padding-bottom: 1.5rem;
+      &:before {
+        top: 52px;
+      }
+    }
+  }
+}

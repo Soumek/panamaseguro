@@ -9,13 +9,13 @@ $(document).ready(function() {
         var options = this.options;
         return (
           '<div class="clearfix">' +
-          '<button class="btn btn-secondary" data-target="#' +
+          '<button class="btn btn-primary" data-target="#' +
           this.id +
           '" data-wizard="back">Atrás</button>' +
-          '<button class="btn btn-next f-right" data-target="#' +
+          '<button class="btn btn-success f-right" data-target="#' +
           this.id +
           '" data-wizard="next">Siguiente</button>' +
-          '<button class="btn btn-next f-right" data-target="#' +
+          '<button class="btn btn-success btn-next f-right" data-target="#' +
           this.id +
           '" data-wizard="finish">Enviar</button>' +
           '</div>'
