@@ -7,6 +7,9 @@
   &-secondary {
     @include custom-button($secondary-color);
   }
+  &-aux {
+    @include custom-button($aux-color, $third-color);
+  }
   &-danger {
     background-color: $danger-color;
     &.static {
@@ -55,9 +58,13 @@
       box-shadow: none;
     }
   }
+
   &-light {
     border: 1px solid #dbdbdb;
     border-radius: 0;
+  }
+  i {
+    font-size: 1.3rem;
   }
 }
 

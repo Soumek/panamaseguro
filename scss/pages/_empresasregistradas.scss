@@ -1,0 +1,41 @@
+.dashboard {
+  &-page-content {
+    .table-actions {
+      i {
+        font-weight: bold;
+      }
+    }
+  }
+}
+.table-container.empresas-registradas {
+  p {
+    display: inline;
+    margin: 0;
+    span {
+      font-weight: bold;
+    }
+  }
+  span {
+    font-weight: bold;
+  }
+  .actions-btn-container {
+    i {
+      font-size: 1.5rem;
+    }
+    &.edit {
+      i {
+        color: #62be73;
+      }
+    }
+  }
+}
+
+.modal .modal-content .modal-body.borrar-empresa {
+  i {
+    font-size: 7rem;
+    color: #e71e17;
+  }
+  button {
+    padding: 0.5rem 2rem;
+  }
+}
