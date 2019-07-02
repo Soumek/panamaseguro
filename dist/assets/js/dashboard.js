@@ -20,6 +20,7 @@ $(document).ready(function() {
   menus.map(menu => {
     $(`#${menu.id}`).on('show.bs.dropdown', function() {
       $(`#${menu.active}`).addClass('dashboard-menu-item-active');
+      console.log('dog');
     });
 
     $(`#${menu.id}`).on('hide.bs.dropdown', function() {

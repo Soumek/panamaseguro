@@ -48,24 +48,6 @@
   }
 }
 
-.modal.modal-form {
-  .modal-dialog {
-    max-width: 600px;
-  }
-  .modal-content {
-    width: 600px;
-    border-radius: 0px;
-    .modal-body {
-      padding: 2rem 2rem;
-    }
-    .modal-footer {
-      button {
-        width: 125px;
-      }
-    }
-  }
-}
-
 @include media-query(map-get($grid-breakpoints, 'lg')) {
   .table-container.choferes-reportados {
     table.dataTable.dtr-inline.collapsed > tbody > tr > td:first-child {

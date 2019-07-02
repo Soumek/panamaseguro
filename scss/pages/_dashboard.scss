@@ -123,6 +123,9 @@
         font-size: 2.5rem;
         margin-bottom: 0.5rem;
       }
+      span {
+        white-space: nowrap;
+      }
     }
     .dropdown-dashboard-menu {
       margin: 0;
@@ -158,26 +161,72 @@
 }
 
 @include media-query(map-get($grid-breakpoints, 'md')) {
+  // .dashboard {
+  //   &-menu {
+  //     .dropdown-dashboard-menu {
+  //       // position: absolute;
+
+  //       // width: 100%;
+  //       position: inherit;
+  //       left: 0px;
+  //       // top: 100%;
+  //       // &.slideInDown {
+  //       //   @keyframes slideInDown {
+  //       //     0% {
+  //       //       -webkit-transform: translate3d(0, -100%, 0);
+  //       //       transform: translate3d(0, -100%, 0);
+  //       //       visibility: visible;
+  //       //     }
+
+  //       //     to {
+  //       //       -webkit-transform: translateZ(0);
+  //       //       transform: translateZ(0);
+  //       //     }
+  //       //   }
+  //       // }
+  //     }
+  //   }
+  // }
+}
+
+@include media-query(map-get($grid-breakpoints, 'sm')) {
+  .dashboard-header,
+  .dashboard-header-container,
+  .dashboard-header-title-container {
+    position: relative;
+    z-index: 10;
+  }
+
   .dashboard {
+    &-content.home {
+      top: -40px;
+    }
     &-menu {
       .dropdown-dashboard-menu {
-        position: absolute;
-        z-index: 10;
-        top: 100%;
-        &.slideInDown {
-          @keyframes slideInDown {
-            0% {
-              -webkit-transform: translate3d(0, -100%, 0);
-              transform: translate3d(0, -100%, 0);
-              visibility: visible;
-            }
-
-            to {
-              -webkit-transform: translateZ(0);
-              transform: translateZ(0);
+        z-index: 5;
+        width: 100%;
+        position: relative;
+        &.dropdown-panama,
+        &.dropdown-usuarios,
+        &.dropdown-empresas {
+          left: inherit;
+        }
+        > div {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          a {
+            width: 50%;
+            margin-top: 1rem;
+            &:first-child {
+              margin-top: 0rem;
             }
           }
         }
+      }
+      .dashboard-menu-item {
+        padding: 1.5rem;
       }
     }
   }

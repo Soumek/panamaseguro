@@ -11,11 +11,11 @@
   p {
     display: inline;
     margin: 0;
-    span {
+    span.cell-title {
       font-weight: bold;
     }
   }
-  span {
+  span.cell-title {
     font-weight: bold;
   }
   .actions-btn-container {
@@ -27,15 +27,5 @@
         color: #62be73;
       }
     }
-  }
-}
-
-.modal .modal-content .modal-body.borrar-empresa {
-  i {
-    font-size: 7rem;
-    color: #e71e17;
-  }
-  button {
-    padding: 0.5rem 2rem;
   }
 }

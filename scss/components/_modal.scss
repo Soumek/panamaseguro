@@ -1,0 +1,36 @@
+.modal.modal-form {
+  .modal-dialog {
+    max-width: 600px;
+  }
+  .modal-content {
+    width: 600px;
+    border-radius: 0px;
+    .modal-body {
+      padding: 2rem 2rem;
+    }
+    .modal-footer {
+      button {
+        width: 125px;
+      }
+    }
+  }
+}
+
+.modal.modal-notificacion {
+  .modal-content {
+    .modal-body {
+      padding: 2rem 2rem;
+    }
+  }
+  .modal-content {
+    .modal-body {
+      i {
+        font-size: 7rem;
+        color: #e71e17;
+      }
+      button {
+        padding: 0.5rem 2rem;
+      }
+    }
+  }
+}

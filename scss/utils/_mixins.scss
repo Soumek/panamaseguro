@@ -21,8 +21,9 @@
   border-radius: 0;
   &:hover {
     color: $color;
-    border: 1px solid $third-color;
-    background-color: darken($background-color, 1%);
+    border: 1px solid $background-color;
+    background-color: scale-color($background-color, $lightness: -10%);
+    transition: all 0.5s ease-out;
   }
   &.disabled {
     color: $third-color;
@@ -39,8 +40,8 @@
   }
   &:not(:disabled):not(.disabled):active,
   &:not(:disabled):not(.disabled):focus {
-    background-color: $background-color;
-    border: 1px solid $third-color;
+    background-color: scale-color($background-color, $lightness: -10%);
+    border: 1px solid scale-color($background-color, $lightness: -10%);
     color: $color;
     box-shadow: none;
   }
