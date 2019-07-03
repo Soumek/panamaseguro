@@ -745,7 +745,9 @@ a:active {
 }
 
 .site-sidebar-second .sidebar-chat-window .scw-form form {
-  position: relative;
+  /* position: relative; */
+  width:100%;
+  display:flex;
 }
 
 .site-sidebar-second .sidebar-chat-window .scw-form .form-control {
@@ -755,8 +757,8 @@ a:active {
 }
 
 .site-sidebar-second .sidebar-chat-window .scw-form .btn {
-  position: absolute;
-  top: -2px;
+  /* position: absolute;
+  top: -2px; */
   background-color: #fff !important;
   right: 0;
   background-color: transparent;

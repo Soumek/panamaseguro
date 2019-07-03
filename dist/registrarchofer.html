@@ -11,11 +11,164 @@
     <link rel="stylesheet" href="assets/themify-icons/themify-icons.css" />
     <link rel="stylesheet" href="../vendor/pe7-icons/assets/Pe-icon-7-stroke.css" />
     <link rel="stylesheet" href="../vendor/material-design-iconic-font/css/material-design-iconic-font.min.css" />
+    <link rel="stylesheet" href="../vendor/jscrollpane/jquery.jscrollpane.css">
+    <link rel="stylesheet" href="../vendor/switchery/dist/switchery.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css" />
     <title>Panamá Seguro</title>
 </head>
 
 <body>
+    <div class="site-sidebar-second custom-scroll custom-scroll-dark">
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link tabs active" data-toggle="tab" href="#tab-1" role="tab">Chat</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link tabs" data-toggle="tab" href="#tab-2" role="tab">Ajustes</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" id="tab-1" role="tabpanel">
+                <div class="sidebar-chat animated fadeIn">
+                    <div class="sidebar-group">
+                        <h6>Favoritos</h6>
+                        <a class="text-black" href="#">
+                            <span class="sc-status bg-success"></span>
+                            <span class="sc-name">John Doe</span>
+                            <span class="sc-writing"> Escribiendo...<i class="ti-pencil"></i></span>
+                        </a>
+                        <a class="text-black" href="#">
+                            <span class="sc-status bg-success"></span>
+                            <span class="sc-name">Vance Osborn</span>
+                        </a>
+                        <a class="text-black" href="#">
+                            <span class="sc-status bg-danger"></span>
+                            <span class="sc-name">Wolfe Stevie</span>
+                            <span class="tag tag-primary">7</span>
+                        </a>
+                        <a class="text-black" href="#">
+                            <span class="sc-status bg-warning"></span>
+                            <span class="sc-name">Jonathan Mel</span>
+                        </a>
+                        <a class="text-black" href="#">
+                            <span class="sc-status bg-secondary"></span>
+                            <span class="sc-name">Carleton Josiah</span>
+                        </a>
+                    </div>
+                    <div class="sidebar-group">
+                        <h6>Trabajo</h6>
+                        <a class="text-black" href="#">
+                            <span class="sc-status bg-secondary"></span>
+                            <span class="sc-name">Larry Hal</span>
+                        </a>
+                        <a class="text-black" href="#">
+                            <span class="sc-status bg-success"></span>
+                            <span class="sc-name">Ron Carran</span>
+                            <span class="sc-writing"> Escribiendo...<i class="ti-pencil"></i></span>
+                        </a>
+                    </div>
+                    <div class="sidebar-group">
+                        <h6>Social</h6>
+                        <a class="text-black" href="#">
+                            <span class="sc-status bg-success"></span>
+                            <span class="sc-name">Lucius Skyler</span>
+                            <span class="tag tag-primary">3</span>
+                        </a>
+                        <a class="text-black" href="#">
+                            <span class="sc-status bg-danger"></span>
+                            <span class="sc-name">Landon Graham</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="sidebar-chat-window animated fadeIn">
+                    <div class="scw-header clearfix">
+                        <a class="text-grey f-left" href="#"><i class="ti-angle-left"></i> Back</a>
+                        <div class="f-right">
+                            <strong>Jonathan Mel</strong>
+                            <div class="avatar box-32">
+                                <img src="assets/img/avatars/5.jpg" alt="">
+                                <span class="status bg-success top right"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scw-item">
+                        <span>¡Hola!</span>
+                    </div>
+                    <div class="scw-item self">
+                        <span>Reunión a las 4pm en la sala de conferencias, ¿Recuerdas?</span>
+                    </div>
+                    <div class="scw-item">
+                        <span>No hay problema, ¡Gracias por recordarmelo!</span>
+                    </div>
+                    <div class="scw-item self">
+                        <span>Prepárate para ser sorprendido.</span>
+                    </div>
+                    <div class="scw-item">
+                        <span>Bien. ¡No puedo esperar!</span>
+                    </div>
+                    <div class="scw-form d-flex ">
+                        <form>
+                            <input class="form-control" type="text" placeholder="Type...">
+                            <button class="btn btn-secondary" type="button"><i class="ti-angle-right"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane" id="tab-2" role="tabpanel">
+                <div class="sidebar-settings animated fadeIn">
+                    <div class="sidebar-group">
+                        <h6>Main</h6>
+                        <div class="ss-item">
+                            <div class="text-truncate">Anyone can register</div>
+                            <div class="ss-checkbox"><input type="checkbox" class="js-switch" data-size="small"
+                                    data-color="#3e70c9" checked></div>
+                        </div>
+                        <div class="ss-item">
+                            <div class="text-truncate">Allow commenting</div>
+                            <div class="ss-checkbox"><input type="checkbox" class="js-switch" data-size="small"
+                                    data-color="#3e70c9">
+                            </div>
+                        </div>
+                        <div class="ss-item">
+                            <div class="text-truncate">Allow deleting</div>
+                            <div class="ss-checkbox"><input type="checkbox" class="js-switch" data-size="small"
+                                    data-color="#3e70c9">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-group">
+                        <h6>Notificatiоns</h6>
+                        <div class="ss-item">
+                            <div class="text-truncate">Commits</div>
+                            <div class="ss-checkbox"><input type="checkbox" class="js-switch" data-size="small"
+                                    data-color="#3e70c9">
+                            </div>
+                        </div>
+                        <div class="ss-item">
+                            <div class="text-truncate">Messages</div>
+                            <div class="ss-checkbox"><input type="checkbox" class="js-switch" data-size="small"
+                                    data-color="#3e70c9" checked></div>
+                        </div>
+                    </div>
+                    <div class="sidebar-group">
+                        <h6>Security</h6>
+                        <div class="ss-item">
+                            <div class="text-truncate">Daily backup</div>
+                            <div class="ss-checkbox"><input type="checkbox" class="js-switch" data-size="small"
+                                    data-color="#3e70c9" checked></div>
+                        </div>
+                        <div class="ss-item">
+                            <div class="text-truncate">API Access</div>
+                            <div class="ss-checkbox"><input type="checkbox" class="js-switch" data-size="small"
+                                    data-color="#3e70c9" checked></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <nav class="navbar user-navbar navbar-expand-md fixed-top bg-dark">
         <a class="navbar-brand" href="#">Panamá <span>Seguro</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -82,16 +235,16 @@
                         </div>
                     </a>
                     <div class="dropdown-menu  user-dropdown animated flipInY" aria-labelledby="usuario-dropdown">
-                        <a class="dropdown-item" href="#"><i class="ti-email m-r-0-5"></i> Inbox</a>
-                        <a class="dropdown-item" href="#"><i class="ti-user m-r-0-5"></i> Profile</a>
-                        <a class="dropdown-item" href="#"><i class="ti-settings m-r-0-5"></i> Settings</a>
+                        <a class="dropdown-item" href="#"><i class="ti-user m-r-0-5"></i> Perfil</a>
+                        <a class="dropdown-item" href="#"><i class="ti-settings m-r-0-5"></i>Ajustes</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#"><i class="ti-help m-r-0-5"></i> Help</a>
-                        <a class="dropdown-item" href="#"><i class="ti-power-off m-r-0-5"></i> Sign out</a>
+                        <a class="dropdown-item" href="#"><i class="ti-help m-r-0-5"></i>Ayuda</a>
+                        <a class="dropdown-item" href="#"><i class="ti-power-off m-r-0-5"></i>Salir</a>
                     </div>
                 </li>
-                <li class="nav-item navbar-sidebar">
-                    <a class="nav-link " href="#"><i class="ti-arrow-left"></i> </a>
+                <li class="nav-item navbar-sidebar site-sidebar-second-toggle">
+                    <a class="nav-link " href="#" data-toggle="collapse"><i class="ti-arrow-left"></i> </a>
+
                 </li>
             </ul>
         </div>
@@ -299,6 +452,10 @@
 <script type="text/javascript" src="../vendor/jquery/jquery-3.3.1.slim.min.js"></script>
 <script type="text/javascript" src="../vendor/bootstrap/popper.min.js"></script>
 <script type="text/javascript" src="../vendor/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="../vendor/jscrollpane/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="../vendor/jscrollpane/mwheelIntent.js"></script>
+<script type="text/javascript" src="../vendor/jscrollpane/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" src="../vendor/switchery/dist/switchery.min.js"></script>
 
 <script type="text/javascript" src="assets/js/dashboard.js"></script>
 <script type="text/javascript" src="assets/js/registrarchofer.js"></script>

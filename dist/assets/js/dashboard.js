@@ -27,6 +27,50 @@ $(document).ready(function() {
       $(`#${menu.active}`).removeClass('dashboard-menu-item-active');
     });
   });
+  /* Scroll */
+
+  function initScroll() {
+    $('.custom-scroll').jScrollPane();
+  }
+
+  initScroll();
+
+  $(window).resize(function() {
+    initScroll();
+  });
+
+  /* Sidebar second - toggle */
+  $('.site-sidebar-second-toggle').click(function() {
+    $(this).toggleClass('active');
+    $('.site-sidebar-second').toggleClass('opened');
+    // $('.template-options').toggle();
+  });
+
+  /* Hide on outside click */
+  $(document).mouseup(function(e) {
+    var container = $(
+      '.template-options, .site-sidebar-second, .site-sidebar-second-toggle'
+    );
+
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
+      container.removeClass('opened');
+      $('.site-sidebar-second-toggle').removeClass('active');
+      $('.template-options').show();
+    }
+  });
+
+  /* Chat */
+  $('.sidebar-chat a, .sidebar-chat-window a').click(function() {
+    $('.sidebar-chat').toggle();
+    $('.sidebar-chat-window').toggle();
+    var api = $('.custom-scroll').data('jsp');
+    api.reinitialise();
+  });
+
+  /* Switchery */
+  $('.site-sidebar-second .js-switch').each(function() {
+    new Switchery($(this)[0], $(this).data());
+  });
 });
 
 //Configuración de idioma para los datatables
