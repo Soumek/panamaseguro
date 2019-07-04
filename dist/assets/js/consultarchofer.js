@@ -6,7 +6,7 @@ $(document).ready(function() {
     e.preventDefault();
 
     $.ajax({
-      url: 'http://127.0.0.1:5500/dist/assets/data/consultarchofer.json',
+      url: 'http://127.0.0.1:5500/dist/assets/data/consultarchofer.jon',
       method: 'GET',
       beforeSend: function() {
         $('#consultarchofer').slideUp('slow');
