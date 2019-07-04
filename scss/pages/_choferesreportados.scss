@@ -25,7 +25,9 @@
       border-right: none;
     }
   }
-
+  .row.paginacion {
+    width: calc(99% - 29px);
+  }
   .pagination {
     &:before {
       display: none;
@@ -43,26 +45,6 @@
     li {
       a {
         border: inherit;
-      }
-    }
-  }
-}
-
-@include media-query(map-get($grid-breakpoints, 'lg')) {
-  .table-container.choferes-reportados {
-    table.dataTable.dtr-inline.collapsed > tbody > tr > td:first-child {
-      &:before {
-        top: 65px;
-      }
-    }
-  }
-}
-@include media-query(map-get($grid-breakpoints, 'sm')) {
-  .table-container.choferes-reportados {
-    table.dataTable.dtr-inline.collapsed > tbody > tr > td:first-child {
-      padding-bottom: 1.5rem;
-      &:before {
-        top: 52px;
       }
     }
   }

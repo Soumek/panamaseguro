@@ -23,3 +23,10 @@
     }
   }
 }
+@include media-query(map-get($grid-breakpoints, 'sm')) {
+  .reportar-chofer {
+    &-title {
+      white-space: normal;
+    }
+  }
+}

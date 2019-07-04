@@ -21,15 +21,49 @@
     .modal-body {
       padding: 2rem 2rem;
     }
+    i {
+      font-size: 7rem;
+      color: #e71e17;
+    }
+    button {
+      padding: 0.5rem 2rem;
+    }
   }
-  .modal-content {
-    .modal-body {
-      i {
-        font-size: 7rem;
-        color: #e71e17;
+}
+
+@include media-query(map-get($grid-breakpoints, 'md')) {
+  .modal.modal-form {
+    .modal-dialog {
+      max-width: inherit;
+      display: flex;
+      justify-content: center;
+    }
+    .modal-content {
+      width: 300px;
+      border-radius: 0px;
+      .modal-body {
+        padding: 2rem 2rem;
       }
-      button {
-        padding: 0.5rem 2rem;
+      .modal-footer {
+        button {
+          width: 125px;
+        }
+      }
+    }
+  }
+
+  .modal.modal-notificacion {
+    .modal-dialog {
+      max-width: inherit;
+      display: flex;
+      justify-content: center;
+    }
+    .modal-content {
+      width: 300px;
+      .modal-body {
+        button {
+          padding: 0.375rem 0.75rem;
+        }
       }
     }
   }

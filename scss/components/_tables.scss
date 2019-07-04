@@ -1,7 +1,7 @@
 //Estilos generales de las tablas
 .table-container {
   padding: 0;
-  
+
   .row {
     width: 100%;
   }
@@ -38,6 +38,11 @@
     .row {
       margin: 0;
     }
+    .dataTables_length {
+      select {
+        margin: 0rem 1rem;
+      }
+    }
   }
   .dataTables_wrapper.no-footer .dataTables_scrollBody {
     border: none;
@@ -68,13 +73,24 @@
     border-radius: 10px;
     background-color: #e3e3e3;
   }
-
-  .pagination {
+  .row.paginacion {
+    margin-left: 15px;
+    margin-right: 15px;
+    width: calc(100% - 43px);
     border-top: 1px solid #c9c9c9;
-    width: calc(100% - 12px);
+    > div.col-md-6,
+    div.col-md-12 {
+      padding: 0;
+    }
+    > div {
+      &:last-child:not(.col-md-12) {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+  .pagination {
     border-radius: 0;
-    position: relative;
-    top: -2px;
     padding-top: 1rem;
     &:before {
       content: 'Página:';
@@ -96,8 +112,21 @@
   //Boton de expandir, primeras columnas del datatable
   table.dataTable.dtr-inline.collapsed > tbody > tr > td:first-child {
     &:before {
+      display: none;
+    }
+    &.sorting_1:after {
+      left: 12px;
+      height: 14px;
+      width: 20px;
+      display: block;
+      color: white;
       border: none;
-      top: 60px;
+      border-radius: 14px;
+      box-shadow: 0 0 3px #444;
+      box-sizing: content-box;
+      text-align: center;
+      font-family: 'Courier New', Courier, monospace;
+      line-height: 14px;
       min-width: 32px;
       @include psudoicon('\f061 ', 'Free');
       font-size: 0.7rem;
@@ -108,11 +137,11 @@
   table.dataTable.dtr-inline.collapsed
     > tbody
     > tr.parent
-    > td:first-child:before,
+    > td:first-child:after,
   table.dataTable.dtr-inline.collapsed
     > tbody
     > tr.parent
-    > th:first-child:before {
+    > th:first-child:after {
     @include psudoicon('\f063 ', 'Free');
     background-color: $secondary-color;
   }
@@ -150,6 +179,22 @@
   .table-container {
     .pagination {
       flex-wrap: wrap;
+    }
+  }
+}
+@include media-query(map-get($grid-breakpoints, 'sm')) {
+  .table-container {
+    .row.paginacion {
+      > div.col-md-6 {
+        > div.dataTables_info {
+          white-space: normal;
+        }
+      }
+      > div {
+        &:last-child:not(.col-md-12) {
+          justify-content: center;
+        }
+      }
     }
   }
 }

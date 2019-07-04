@@ -5,6 +5,10 @@
         font-weight: bold;
       }
     }
+    .nueva-empresa-form,
+    .editar-empresa-form {
+      display: none;
+    }
   }
 }
 .table-container.empresas-registradas {

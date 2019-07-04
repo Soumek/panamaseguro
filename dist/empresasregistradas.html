@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="../vendor/pe7-icons/assets/Pe-icon-7-stroke.css">
     <link rel="stylesheet" href="../vendor/material-design-iconic-font/css/material-design-iconic-font.min.css">
     <link rel="stylesheet" href="../vendor/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../vendor/jscrollpane/jquery.jscrollpane.css">
+    <link rel="stylesheet" href="../vendor/switchery/dist/switchery.min.css">
     <link rel="stylesheet" href="../vendor/DataTables/css/jquery.dataTables.min.css">
     <link rel="stylesheet" href="../vendor/DataTables/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="../vendor/DataTables/Responsive/css/responsive.bootstrap4.min.css">
@@ -23,6 +25,136 @@
 </head>
 
 <body>
+    <div class="site-sidebar-second custom-scroll custom-scroll-dark">
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link tabs active" data-toggle="tab" href="#tab-1" role="tab">Chat</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link tabs" data-toggle="tab" href="#tab-2" role="tab">Ajustes</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" id="tab-1" role="tabpanel">
+                <div class="sidebar-chat animated fadeIn">
+                    <div class="sidebar-group">
+                        <h6>Chat Grupales</h6>
+                        <a class="text-black" href="#">
+                            <span class="sc-status bg-success"></span>
+                            <span class="sc-name">Taxis La Grulla</span>
+                        </a>
+                        <a class="text-black" href="#">
+                            <span class="sc-status bg-success"></span>
+                            <span class="sc-name">Taxis Miami</span>
+                        </a>
+                        <a class="text-black" href="#">
+                            <span class="sc-status bg-danger"></span>
+                            <span class="sc-name">Taxis Diluvio</span>
+                            <span class="tag tag-primary">7</span>
+                        </a>
+                    </div>
+                    <div class="sidebar-group">
+                        <h6>Chats</h6>
+                        <a class="text-black" href="#">
+                            <span class="sc-status bg-secondary"></span>
+                            <span class="sc-name">Juan Pérez</span>
+                        </a>
+                        <a class="text-black" href="#">
+                            <span class="sc-status bg-success"></span>
+                            <span class="sc-name">Marcos Vidal</span>
+                            <span class="sc-writing"> Escribiendo...<i class="ti-pencil"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="sidebar-chat-window animated fadeIn">
+                    <div class="scw-header clearfix">
+                        <a class="text-grey f-left" href="#"><i class="ti-angle-left"></i> Back</a>
+                        <div class="f-right">
+                            <strong>Juan Pérez</strong>
+                            <div class="avatar box-32">
+                                <img src="assets/img/avatars/5.jpg" alt="">
+                                <span class="status bg-success top right"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scw-item">
+                        <span>¡Hola!</span>
+                    </div>
+                    <div class="scw-item self">
+                        <span>Reunión a las 4pm en la sala de conferencias, ¿Recuerdas?</span>
+                    </div>
+                    <div class="scw-item">
+                        <span>No hay problema, ¡Gracias por recordarmelo!</span>
+                    </div>
+                    <div class="scw-item self">
+                        <span>Prepárate para ser sorprendido.</span>
+                    </div>
+                    <div class="scw-item">
+                        <span>Bien. ¡No puedo esperar!</span>
+                    </div>
+                    <div class="scw-form d-flex ">
+                        <form>
+                            <input class="form-control" type="text" placeholder="Type...">
+                            <button class="btn btn-secondary" type="button"><i class="ti-angle-right"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane" id="tab-2" role="tabpanel">
+                <div class="sidebar-settings animated fadeIn">
+                    <div class="sidebar-group">
+                        <h6>Principales</h6>
+                        <div class="ss-item">
+                            <div class="text-truncate">Cualquiera se puede registrar</div>
+                            <div class="ss-checkbox"><input type="checkbox" class="js-switch" data-size="small"
+                                    data-color="#3e70c9" checked></div>
+                        </div>
+                        <div class="ss-item">
+                            <div class="text-truncate">Permitir Notificaciones</div>
+                            <div class="ss-checkbox"><input type="checkbox" class="js-switch" data-size="small"
+                                    data-color="#3e70c9">
+                            </div>
+                        </div>
+                        <div class="ss-item">
+                            <div class="text-truncate">Permitir Borrar</div>
+                            <div class="ss-checkbox"><input type="checkbox" class="js-switch" data-size="small"
+                                    data-color="#3e70c9">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-group">
+                        <h6>Notificaciones</h6>
+                        <div class="ss-item">
+                            <div class="text-truncate">Actualizaciones</div>
+                            <div class="ss-checkbox"><input type="checkbox" class="js-switch" data-size="small"
+                                    data-color="#3e70c9">
+                            </div>
+                        </div>
+                        <div class="ss-item">
+                            <div class="text-truncate">Mensajes</div>
+                            <div class="ss-checkbox"><input type="checkbox" class="js-switch" data-size="small"
+                                    data-color="#3e70c9" checked></div>
+                        </div>
+                    </div>
+                    <div class="sidebar-group">
+                        <h6>Seguridad</h6>
+                        <div class="ss-item">
+                            <div class="text-truncate">Backup Diario</div>
+                            <div class="ss-checkbox"><input type="checkbox" class="js-switch" data-size="small"
+                                    data-color="#3e70c9" checked></div>
+                        </div>
+                        <div class="ss-item">
+                            <div class="text-truncate">Acceso API</div>
+                            <div class="ss-checkbox"><input type="checkbox" class="js-switch" data-size="small"
+                                    data-color="#3e70c9" checked></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <nav class="navbar user-navbar navbar-expand-md fixed-top bg-dark">
         <a class="navbar-brand" href="#">Panamá <span>Seguro</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -96,8 +228,9 @@
                         <a class="dropdown-item" href="#"><i class="ti-power-off m-r-0-5"></i>Salir</a>
                     </div>
                 </li>
-                <li class="nav-item navbar-sidebar">
-                    <a class="nav-link " href="#"><i class="ti-arrow-left"></i> </a>
+                <li class="nav-item navbar-sidebar site-sidebar-second-toggle">
+                    <a class="nav-link " href="#" data-toggle="collapse"><i class="ti-arrow-left"></i> </a>
+
                 </li>
             </ul>
         </div>
@@ -128,6 +261,7 @@
                                         <div class="dropdown-menu dropdown-dashboard-menu animated slideInDown"
                                             aria-labelledby="dashboard-menu-choferes">
                                             <div>
+
                                                 <a class="btn btn-primary outlined"
                                                     href="consultarchofer.html">Consultar
                                                     Chofer</a>
@@ -150,14 +284,20 @@
                                                 Seguro</span> </a>
                                         <div class="dropdown-menu dropdown-dashboard-menu animated slideInDown dropdown-panama "
                                             aria-labelledby="dashboard-menu-panama">
-                                            <a class="btn btn-primary outlined" href="consultarchofer.html">Consultar
-                                                Chofer2</a>
-                                            <a class="btn btn-primary outlined" href="registrarchofer.html">Registrar
-                                                Chofer</a>
-                                            <a class="btn btn-primary outlined" href="reportarchofer.html">Reportar
-                                                Chofer</a>
-                                            <a class="btn btn-primary outlined" href="choferesreportados.html">Choferes
-                                                Reportados</a>
+                                            <div>
+
+                                                <a class="btn btn-primary outlined"
+                                                    href="consultarchofer.html">Consultar
+                                                    Chofer2</a>
+                                                <a class="btn btn-primary outlined"
+                                                    href="registrarchofer.html">Registrar
+                                                    Chofer</a>
+                                                <a class="btn btn-primary outlined" href="reportarchofer.html">Reportar
+                                                    Chofer</a>
+                                                <a class="btn btn-primary outlined"
+                                                    href="choferesreportados.html">Choferes
+                                                    Reportados</a>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="nav-item dropdown col-md-3 col-sm-3" id="dashboard-menu-usuarios">
@@ -168,32 +308,26 @@
                                                 Usuarios</span> </a>
                                         <div class="dropdown-menu dropdown-dashboard-menu animated slideInDown dropdown-usuarios"
                                             aria-labelledby="dashboard-menu-usuarios">
-                                            <a class="btn btn-primary outlined" href="consultarchofer.html">Consultar
-                                                Chofer3</a>
-                                            <a class="btn btn-primary outlined" href="registrarchofer.html">Registrar
-                                                Chofer</a>
-                                            <a class="btn btn-primary outlined" href="reportarchofer.html">Reportar
-                                                Chofer</a>
-                                            <a class="btn btn-primary outlined" href="choferesreportados.html">Choferes
-                                                Reportados</a>
+                                            <div>
+
+                                                <a class="btn btn-primary outlined"
+                                                    href="consultarchofer.html">Consultar
+                                                    Chofer3</a>
+                                                <a class="btn btn-primary outlined"
+                                                    href="registrarchofer.html">Registrar
+                                                    Chofer</a>
+                                                <a class="btn btn-primary outlined" href="reportarchofer.html">Reportar
+                                                    Chofer</a>
+                                                <a class="btn btn-primary outlined"
+                                                    href="choferesreportados.html">Choferes
+                                                    Reportados</a>
+                                            </div>
                                         </div>
                                     </li>
-                                    <li class="nav-item dropdown col-md-3 col-sm-3" id="dashboard-menu-empresas">
-                                        <a class="nav-link dashboard-menu-item dashboard-menu-item-last"
-                                            id="dropdown-empresas" href="#" role="button" data-toggle="dropdown"
-                                            aria-haspopup="true" aria-expanded="false"><i class="ti-briefcase"></i>
+                                    <li class="nav-item  col-md-3 col-sm-3">
+                                        <a class="nav-link dashboard-menu-item dashboard-menu-item-last "
+                                            href="empresasregistradas.html" role=" button"><i class="ti-briefcase"></i>
                                             <span>Empresas / Afiliados</span> </a>
-                                        <div class="dropdown-menu dropdown-dashboard-menu animated slideInDown dropdown-empresas"
-                                            aria-labelledby="dashboard-menu-empresas">
-                                            <a class="btn btn-primary outlined" href="consultarchofer.html">Consultar
-                                                Chofer4</a>
-                                            <a class="btn btn-primary outlined" href="registrarchofer.html">Registrar
-                                                Chofer</a>
-                                            <a class="btn btn-primary outlined" href="reportarchofer.html">Reportar
-                                                Chofer</a>
-                                            <a class="btn btn-primary outlined" href="choferesreportados.html">Choferes
-                                                Reportados</a>
-                                        </div>
                                     </li>
                                 </ul>
                             </nav>
@@ -203,529 +337,484 @@
                     </div>
             </section>
             <section class="col-md-12 dashboard-page-content">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h2>
-                            Listas de Empresas Registradas
-                        </h2>
+                <div id="empresas-registradas-table">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>
+                                Listas de Empresas Registradas
+                            </h2>
 
-                    </div>
-                    <div class="col-md-6 table-actions d-flex justify-content-end ">
-                        <button class="btn btn-aux mr-3">
-                            <div class="d-inline mr-2"><i class="ti-import"></i></div> Exportar
-                        </button>
-                        <button class="btn btn-primary">
-                            <div class="d-inline mr-2"><i class="ti-plus "></i></div> Nueva Empresa
-                        </button>
+                        </div>
+                        <div class="col-md-6 table-actions">
+                            <button class="btn btn-aux mr-3">
+                                <div class="d-inline mr-2"><i class="ti-import"></i></div> Exportar
+                            </button>
+                            <button class="btn btn-primary" id="nueva-empresa-btn">
+                                <div class="d-inline mr-2"><i class="ti-plus "></i></div> Nueva Empresa
+                            </button>
 
 
-                    </div>
+                        </div>
 
-                    </form>
-                    <div class="col-md-12 table-container empresas-registradas mt-4">
-                        <table class="table  table-bordered  hover dataTable" id="table-1">
-                            <thead>
-                                <tr>
-                                    <th class="all">Nombre de la Empresa</th>
-                                    <th class="desktop tablet-l tablet-p mobile-l">Datos de Dueño</th>
-                                    <th class="desktop tablet-l tablet-p">Datos del Representante</th>
-                                    <th class="desktop tablet-l">Teléfonos de la Empresa</th>
-                                    <th class="desktop"></th>
-                                    <th class="none">Dirección de la Empresa:</th>
-                                    <th class="none">Cuenta Afiliada:</th>
-                                    <th class="none">Panamá Seguro:</th>
+                        </form>
+                        <div class="col-md-12 table-container empresas-registradas mt-4"
+                            id="empresas-registradas-table">
+                            <table class="table  table-bordered  hover dataTable" id="table-1">
+                                <thead>
+                                    <tr>
+                                        <th class="all">Nombre de la Empresa</th>
+                                        <th class="desktop tablet-l tablet-p">Datos de Dueño</th>
+                                        <th class="desktop tablet-l tablet-p">Datos del Representante</th>
+                                        <th class="desktop tablet-l">Teléfonos de la Empresa</th>
+                                        <th class="all"></th>
+                                        <th class="none">Dirección de la Empresa:</th>
+                                        <th class="none">Cuenta Afiliada:</th>
+                                        <th class="none">Panamá Seguro:</th>
 
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Taxi la Grulla</td>
-                                    <td class="responsive-column">
-                                        <p><span class="cell-title">Nombre: </span>Marcos
-                                            Vidal</p><br>
-                                        <p><span class="cell-title">Email: </span>marcoseead@gmail.com</p><br>
-                                        <p><span class="cell-title">Teléfono: </span>4245373449</p>
-                                    </td>
-                                    <td class="responsive-column">
-                                        <span class="cell-title">Nombre: </span></span><br>
-                                        <span class="cell-title">Cédula: </span></span>
-
-                                    </td>
-                                    <td class="responsive-column">
-                                        <p><span class="cell-title">Teléfono: </span>4245373449</p>
-                                    </td>
-                                    <td class="responsive-column">
-                                        <div class="d-flex justify-content-center flex-column align-items-center">
-                                            <div class="actions-btn-container edit"><button type="button" class="btn"
-                                                    data-toggle="modal" data-target="#exampleModal">
-                                                    <i class="ti-pencil"></i>
-                                                </button>
-                                            </div>
-                                            <div class="actions-btn-container "><button type="button" class="btn"
-                                                    data-toggle="modal" data-target="#exampleModal">
-                                                    <i class="ti-trash"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-
-                                    </td>
-                                    <td class="child-column">
-                                        La Chorerra
-                                    </td>
-                                    <td class="child-column">
-                                        PS-T-97
-                                    </td>
-                                    <td class="child-column">
-                                        Aprobada
-                                    </td>
-
-                                </tr>
-                                <tr>
-                                    <td>Taxi la Grulla</td>
-                                    <td class="responsive-column">
-                                        <p><span class="cell-title">Nombre: </span>Marcos
-                                            Vidal</p><br>
-                                        <p><span class="cell-title">Email: </span>marcoseead@gmail.com</p><br>
-                                        <p><span class="cell-title">Teléfono: </span>4245373449</p>
-                                    </td>
-                                    <td class="responsive-column">
-                                        <span class="cell-title">Nombre:</span></span><br>
-                                        <span class="cell-title">Cédula:</span></span>
-
-                                    </td>
-                                    <td class="responsive-column">
-                                        <p><span class="cell-title">Teléfono:</span>4245373449</p>
-                                    </td>
-                                    <td class="responsive-column">
-                                        <div class="d-flex justify-content-center flex-column align-items-center">
-                                            <div class="actions-btn-container edit"><button type="button" class="btn"
-                                                    data-toggle="modal" data-target="#exampleModal">
-                                                    <i class="ti-pencil"></i>
-                                                </button>
-                                            </div>
-                                            <div class="actions-btn-container"><button type="button" class="btn"
-                                                    data-toggle="modal" data-target="#exampleModal">
-                                                    <i class="ti-trash"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="child-column">
-                                        La Chorerra
-                                    </td>
-                                    <td class="child-column">
-                                        PS-T-97
-                                    </td>
-                                    <td class="child-column">
-                                        Aprobada
-                                    </td>
-
-                                </tr>
-                                <tr>
-                                    <td>Taxi la Grulla</td>
-                                    <td class="responsive-column">
-                                        <p><span class="cell-title">Nombre: </span>Marcos
-                                            Vidal</p><br>
-                                        <p><span class="cell-title">Email: </span>marcoseead@gmail.com</p><br>
-                                        <p><span class="cell-title">Teléfono: </span>4245373449</p>
-                                    </td>
-                                    <td class="responsive-column">
-                                        <span class="cell-title">Nombre:</span></span><br>
-                                        <span class="cell-title">Cédula:</span></span>
-
-                                    </td>
-                                    <td class="responsive-column">
-                                        <p><span class="cell-title">Teléfono:</span>4245373449</p>
-                                    </td>
-                                    <td class="responsive-column">
-                                        <div class="d-flex justify-content-center flex-column align-items-center">
-                                            <div class="actions-btn-container edit"><button type="button" class="btn"
-                                                    data-toggle="modal" data-target="#exampleModal">
-                                                    <i class="ti-pencil"></i>
-                                                </button>
-                                            </div>
-                                            <div class="actions-btn-container"><button type="button" class="btn"
-                                                    data-toggle="modal" data-target="#exampleModal">
-                                                    <i class="ti-trash"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="child-column">
-                                        La Chorerra
-                                    </td>
-                                    <td class="child-column">
-                                        PS-T-97
-                                    </td>
-                                    <td class="child-column">
-                                        Aprobada
-                                    </td>
-
-                                </tr>
-                                <tr>
-                                    <td>Taxi la Grulla</td>
-                                    <td class="responsive-column">
-                                        <p><span class="cell-title">Nombre: </span>Marcos
-                                            Vidal</p><br>
-                                        <p><span class="cell-title">Email: </span>marcoseead@gmail.com</p><br>
-                                        <p><span class="cell-title">Teléfono: </span>4245373449</p>
-                                    </td>
-                                    <td class="responsive-column">
-                                        <span class="cell-title">Nombre:</span></span><br>
-                                        <span class="cell-title">Cédula:</span></span>
-
-                                    </td>
-                                    <td class="responsive-column">
-                                        <p><span class="cell-title">Teléfono:</span>4245373449</p>
-                                    </td>
-                                    <td class="responsive-column">
-                                        <div class="d-flex justify-content-center flex-column align-items-center">
-                                            <div class="actions-btn-container edit"><button type="button" class="btn"
-                                                    data-toggle="modal" data-target="#exampleModal">
-                                                    <i class="ti-pencil"></i>
-                                                </button>
-                                            </div>
-                                            <div class="actions-btn-container"><button type="button" class="btn"
-                                                    data-toggle="modal" data-target="#exampleModal">
-                                                    <i class="ti-trash"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="child-column">
-                                        La Chorerra
-                                    </td>
-                                    <td class="child-column">
-                                        PS-T-97
-                                    </td>
-                                    <td class="child-column">
-                                        Aprobada
-                                    </td>
-
-                                </tr>
-                                <tr>
-                                    <td>Taxi la Grulla</td>
-                                    <td class="responsive-column">
-                                        <p><span>Nombre: </span>Marcos
-                                            Vidal</p><br>
-                                        <p><span>Email: </span>marcoseead@gmail.com</p><br>
-                                        <p><span>Teléfono: </span>4245373449</p>
-                                    </td>
-                                    <td class="responsive-column">
-                                        <span>Nombre:</span></span><br>
-                                        <span>Cédula:</span></span>
-
-                                    </td>
-                                    <td class="responsive-column">
-                                        <p><span>Teléfono:</span>4245373449</p>
-                                    </td>
-                                    <td class="responsive-column">
-                                        <div class="d-flex justify-content-center flex-column align-items-center">
-                                            <div class="actions-btn-container edit"><button type="button" class="btn"
-                                                    data-toggle="modal" data-target="#exampleModal">
-                                                    <i class="ti-pencil"></i>
-                                                </button>
-                                            </div>
-                                            <div class="actions-btn-container"><button type="button" class="btn"
-                                                    data-toggle="modal" data-target="#exampleModal">
-                                                    <i class="ti-trash"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="child-column">
-                                        La Chorerra
-                                    </td>
-                                    <td class="child-column">
-                                        PS-T-97
-                                    </td>
-                                    <td class="child-column">
-                                        Aprobada
-                                    </td>
-
-                                </tr>
-                                <tr>
-                                    <td>Taxi la Grulla</td>
-                                    <td class="responsive-column">
-                                        <p><span>Nombre: </span>Marcos
-                                            Vidal</p><br>
-                                        <p><span>Email: </span>marcoseead@gmail.com</p><br>
-                                        <p><span>Teléfono: </span>4245373449</p>
-                                    </td>
-                                    <td class="responsive-column">
-                                        <span>Nombre:</span></span><br>
-                                        <span>Cédula:</span></span>
-
-                                    </td>
-                                    <td class="responsive-column">
-                                        <p><span>Teléfono:</span>4245373449</p>
-                                    </td>
-                                    <td class="responsive-column">
-                                        <div class="arreglo-btn-container"><button type="button" class="btn btn-primary"
-                                                data-toggle="modal" data-target="#exampleModal">
-                                                Arreglo de Pago
-                                            </button>
-                                        </div>
-                                        <div class="arreglo-btn-container"><button type="button" class="btn btn-primary"
-                                                data-toggle="modal" data-target="#exampleModal">
-                                                Arreglo de Pago
-                                            </button>
-                                        </div>
-                                    </td>
-                                    <td class="child-column">
-                                        La Chorerra
-                                    </td>
-                                    <td class="child-column">
-                                        PS-T-97
-                                    </td>
-                                    <td class="child-column">
-                                        Aprobada
-                                    </td>
-
-                                </tr>
-                                <tr>
-                                    <td>Taxi la Grulla</td>
-                                    <td class="responsive-column">
-                                        <p><span>Nombre: </span>Marcos
-                                            Vidal</p><br>
-                                        <p><span>Email: </span>marcoseead@gmail.com</p><br>
-                                        <p><span>Teléfono: </span>4245373449</p>
-                                    </td>
-                                    <td class="responsive-column">
-                                        <span>Nombre:</span></span><br>
-                                        <span>Cédula:</span></span>
-
-                                    </td>
-                                    <td class="responsive-column">
-                                        <p><span>Teléfono:</span>4245373449</p>
-                                    </td>
-                                    <td class="responsive-column">
-                                        <div class="arreglo-btn-container"><button type="button" class="btn btn-primary"
-                                                data-toggle="modal" data-target="#exampleModal">
-                                                Arreglo de Pago
-                                            </button>
-                                        </div>
-                                        <div class="arreglo-btn-container"><button type="button" class="btn btn-primary"
-                                                data-toggle="modal" data-target="#exampleModal">
-                                                Arreglo de Pago
-                                            </button>
-                                        </div>
-                                    </td>
-                                    <td class="child-column">
-                                        La Chorerra
-                                    </td>
-                                    <td class="child-column">
-                                        PS-T-97
-                                    </td>
-                                    <td class="child-column">
-                                        Aprobada
-                                    </td>
-
-                                </tr>
-                                <!-- <tr>
-                                        <td>Chofer de Prueba Panama Seguro</td>
-                                        <td>12415340</td>
-                                        <td>3924699,46433521,35335325,3924699,46433521,35335325,3924699,46433521,35335325
-                                        </td>
-                                        <td>12415340</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
                                         <td>Taxi la Grulla</td>
-                                        <td>$1.000,00</td>
-                                        <td>10</td>
-                                        <td>$1.000,00</td>
-                                        <td>Por motivo: Abandono del auto en accidente- Auto rescatado con otro conductor no
-                                            designado- Auto con multas en PANAPASS- Chofer con denuncia en inmigración</td>
                                         <td>
-                                            <div class="arreglo-btn-container"><button type="button" class="btn btn-primary"
-                                                    data-toggle="modal" data-target="#exampleModal">
-                                                    Arreglo de Pago
-                                                </button>
-                                            </div>
+                                            <p><span class="cell-title">Nombre: </span>Marcos
+                                                Vidal</p><br>
+                                            <p><span class="cell-title">Email: </span>marcoseead@gmail.com</p><br>
+                                            <p><span class="cell-title">Teléfono: </span>4245373449</p>
                                         </td>
+                                        <td>
+                                            <span class="cell-title">Nombre: </span></span><br>
+                                            <span class="cell-title">Cédula: </span></span>
+
+                                        </td>
+                                        <td>
+                                            <p><span class="cell-title">Teléfono: </span>4245373449</p>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex justify-content-center flex-column align-items-center">
+                                                <div class="actions-btn-container edit"><button type="button"
+                                                        class="btn edit">
+                                                        <i class="ti-pencil"></i>
+                                                    </button>
+                                                </div>
+                                                <div class="actions-btn-container "><button type="button" class="btn"
+                                                        data-toggle="modal" data-target="#exampleModal">
+                                                        <i class="ti-trash"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                        </td>
+                                        <td>
+                                            La Chorerra
+                                        </td>
+                                        <td>
+                                            PS-T-97
+                                        </td>
+                                        <td>
+                                            Aprobada
+                                        </td>
+
                                     </tr>
                                     <tr>
-                                        <td>Chofer de Prueba Panama Seguro</td>
-                                        <td>12415340</td>
-                                        <td>3924699,46433521,35335325,3924699,46433521,35335325,3924699,46433521,35335325
-                                        </td>
-                                        <td>12415340</td>
                                         <td>Taxi la Grulla</td>
-                                        <td>$1.000,00</td>
-                                        <td>10</td>
-                                        <td>$1.000,00</td>
-                                        <td>Por motivo: Abandono del auto en accidente- Auto rescatado con otro conductor no
-                                            designado- Auto con multas en PANAPASS- Chofer con denuncia en inmigración</td>
                                         <td>
-                                            <div class="arreglo-btn-container"><button type="button" class="btn btn-primary"
-                                                    data-toggle="modal" data-target="#exampleModal">
-                                                    Arreglo de Pago
-                                                </button>
-                                            </div>
+                                            <p><span class="cell-title">Nombre: </span>Marcos
+                                                Vidal</p><br>
+                                            <p><span class="cell-title">Email: </span>marcoseead@gmail.com</p><br>
+                                            <p><span class="cell-title">Teléfono: </span>4245373449</p>
                                         </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Chofer de Prueba Panama Seguro</td>
-                                        <td>12415340</td>
-                                        <td>3924699,46433521,35335325,3924699,46433521,35335325,3924699,46433521,35335325
-                                        </td>
-                                        <td>12415340</td>
-                                        <td>Taxi la Grulla</td>
-                                        <td>$1.000,00</td>
-                                        <td>10</td>
-                                        <td>$1.000,00</td>
-                                        <td>Por motivo: Abandono del auto en accidente- Auto rescatado con otro conductor no
-                                            designado- Auto con multas en PANAPASS- Chofer con denuncia en inmigración</td>
                                         <td>
-                                            <div class="arreglo-btn-container"><button type="button" class="btn btn-primary"
-                                                    data-toggle="modal" data-target="#exampleModal">
-                                                    Arreglo de Pago
-                                                </button>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Chofer de Prueba Panama Seguro</td>
-                                        <td>12415340</td>
-                                        <td>3924699,46433521,35335325,3924699,46433521,35335325,3924699,46433521,35335325
-                                        </td>
-                                        <td>12415340</td>
-                                        <td>Taxi la Grulla</td>
-                                        <td>$1.000,00</td>
-                                        <td>10</td>
-                                        <td>$1.000,00</td>
-                                        <td>Por motivo: Abandono del auto en accidente- Auto rescatado con otro conductor no
-                                            designado- Auto con multas en PANAPASS- Chofer con denuncia en inmigración</td>
-                                        <td>
-                                            <div class="arreglo-btn-container"><button type="button" class="btn btn-primary"
-                                                    data-toggle="modal" data-target="#exampleModal">
-                                                    Arreglo de Pago
-                                                </button>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Chofer de Prueba Panama Seguro</td>
-                                        <td>12415340</td>
-                                        <td>3924699,46433521,35335325,3924699,46433521,35335325,3924699,46433521,35335325
-                                        </td>
-                                        <td>12415340</td>
-                                        <td>Taxi la Grulla</td>
-                                        <td>$1.000,00</td>
-                                        <td>10</td>
-                                        <td>$1.000,00</td>
-                                        <td>Por motivo: Abandono del auto en accidente- Auto rescatado con otro conductor no
-                                            designado- Auto con multas en PANAPASS- Chofer con denuncia en inmigración</td>
-                                        <td>
-                                            <div class="arreglo-btn-container"><button class="btn btn-primary"
-                                                    type="button">Arreglo de Pago</button></div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Chofer de Prueba Panama Seguro</td>
-                                        <td>12415340</td>
-                                        <td>3924699,46433521,35335325,3924699,46433521,35335325,3924699,46433521,35335325
-                                        </td>
-                                        <td>12415340</td>
-                                        <td>Taxi la Grulla</td>
-                                        <td>$1.000,00</td>
-                                        <td>10</td>
-                                        <td>$1.000,00</td>
-                                        <td>Por motivo: Abandono del auto en accidente- Auto rescatado con otro conductor no
-                                            designado- Auto con multas en PANAPASS- Chofer con denuncia en inmigración</td>
-                                        <td>
-                                            <div class="arreglo-btn-container"><button class="btn btn-primary"
-                                                    type="button">Arreglo de Pago</button></div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Chofer de Prueba Panama Seguro</td>
-                                        <td>12415340</td>
-                                        <td>3924699,46433521,35335325,3924699,46433521,35335325,3924699,46433521,35335325
-                                        </td>
-                                        <td>12415340</td>
-                                        <td>Taxi la Grulla</td>
-                                        <td>$1.000,00</td>
-                                        <td>10</td>
-                                        <td>$1.000,00</td>
-                                        <td>Por motivo: Abandono del auto en accidente- Auto rescatado con otro conductor no
-                                            designado- Auto con multas en PANAPASS- Chofer con denuncia en inmigración</td>
-                                        <td>
-                                            <div class="arreglo-btn-container"><button class="btn btn-primary"
-                                                    type="button">Arreglo de Pago</button></div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Chofer de Prueba Panama Seguro</td>
-                                        <td>12415340</td>
-                                        <td>3924699,46433521,35335325,3924699,46433521,35335325,3924699,46433521,35335325
-                                        </td>
-                                        <td>12415340</td>
-                                        <td>Taxi la Grulla</td>
-                                        <td>$1.000,00</td>
-                                        <td>10</td>
-                                        <td>$1.000,00</td>
-                                        <td>Por motivo: Abandono del auto en accidente- Auto rescatado con otro conductor no
-                                            designado- Auto con multas en PANAPASS- Chofer con denuncia en inmigración</td>
-                                        <td>
-                                            <div class="arreglo-btn-container"><button class="btn btn-primary"
-                                                    type="button">Arreglo de Pago</button></div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Chofer de Prueba Panama Seguro</td>
-                                        <td>12415340</td>
-                                        <td>3924699,46433521,35335325,3924699,46433521,35335325,3924699,46433521,35335325
-                                        </td>
-                                        <td>12415340</td>
-                                        <td>Taxi la Grulla</td>
-                                        <td>$1.000,00</td>
-                                        <td>10</td>
-                                        <td>$1.000,00</td>
-                                        <td>Por motivo: Abandono del auto en accidente- Auto rescatado con otro conductor no
-                                            designado- Auto con multas en PANAPASS- Chofer con denuncia en inmigración</td>
-                                        <td>
-                                            <div class="arreglo-btn-container"><button class="btn btn-primary"
-                                                    type="button">Arreglo de Pago</button></div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Chofer de Prueba Panama Seguro</td>
-                                        <td>12415340</td>
-                                        <td>3924699,46433521,35335325,3924699,46433521,35335325,3924699,46433521,35335325
-                                        </td>
-                                        <td>12415340</td>
-                                        <td>Taxi la Grulla</td>
-                                        <td>$1.000,00</td>
-                                        <td>10</td>
-                                        <td>$1.000,00</td>
-                                        <td>Por motivo: Abandono del auto en accidente- Auto rescatado con otro conductor no
-                                            designado- Auto con multas en PANAPASS- Chofer con denuncia en inmigración</td>
-                                        <td>
-                                            <div class="arreglo-btn-container"><button class="btn btn-primary"
-                                                    type="button">Arreglo de Pago</button></div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Chofer de Prueba Panama Seguro</td>
-                                        <td>12415340</td>
-                                        <td>3924699,46433521,35335325,3924699,46433521,35335325,3924699,46433521,35335325
-                                        </td>
-                                        <td>12415340</td>
-                                        <td>Taxi la Grulla</td>
-                                        <td>$1.000,00</td>
-                                        <td>10</td>
-                                        <td>$1.000,00</td>
-                                        <td>Por motivo: Abandono del auto en accidente- Auto rescatado con otro conductor no
-                                            designado- Auto con multas en PANAPASS- Chofer con denuncia en inmigración</td>
-                                        <td>
-                                            <div class="arreglo-btn-container"><button class="btn btn-primary"
-                                                    type="button">Arreglo de Pago</button></div>
-                                        </td>
-                                    </tr> -->
-                            </tbody>
+                                            <span class="cell-title">Nombre: </span></span><br>
+                                            <span class="cell-title">Cédula: </span></span>
 
-                        </table>
+                                        </td>
+                                        <td>
+                                            <p><span class="cell-title">Teléfono: </span>4245373449</p>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex justify-content-center flex-column align-items-center">
+                                                <div class="actions-btn-container edit"><button type="button"
+                                                        class="btn" data-toggle="modal" data-target="#exampleModal">
+                                                        <i class="ti-pencil"></i>
+                                                    </button>
+                                                </div>
+                                                <div class="actions-btn-container "><button type="button" class="btn"
+                                                        data-toggle="modal" data-target="#exampleModal">
+                                                        <i class="ti-trash"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                        </td>
+                                        <td>
+                                            La Chorerra
+                                        </td>
+                                        <td>
+                                            PS-T-97
+                                        </td>
+                                        <td>
+                                            Aprobada
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Taxi la Grulla</td>
+                                        <td>
+                                            <p><span class="cell-title">Nombre: </span>Marcos
+                                                Vidal</p><br>
+                                            <p><span class="cell-title">Email: </span>marcoseead@gmail.com</p><br>
+                                            <p><span class="cell-title">Teléfono: </span>4245373449</p>
+                                        </td>
+                                        <td>
+                                            <span class="cell-title">Nombre: </span></span><br>
+                                            <span class="cell-title">Cédula: </span></span>
+
+                                        </td>
+                                        <td>
+                                            <p><span class="cell-title">Teléfono: </span>4245373449</p>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex justify-content-center flex-column align-items-center">
+                                                <div class="actions-btn-container edit"><button type="button"
+                                                        class="btn" data-toggle="modal" data-target="#exampleModal">
+                                                        <i class="ti-pencil"></i>
+                                                    </button>
+                                                </div>
+                                                <div class="actions-btn-container "><button type="button" class="btn"
+                                                        data-toggle="modal" data-target="#exampleModal">
+                                                        <i class="ti-trash"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                        </td>
+                                        <td>
+                                            La Chorerra
+                                        </td>
+                                        <td>
+                                            PS-T-97
+                                        </td>
+                                        <td>
+                                            Aprobada
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Taxi la Grulla</td>
+                                        <td>
+                                            <p><span class="cell-title">Nombre: </span>Marcos
+                                                Vidal</p><br>
+                                            <p><span class="cell-title">Email: </span>marcoseead@gmail.com</p><br>
+                                            <p><span class="cell-title">Teléfono: </span>4245373449</p>
+                                        </td>
+                                        <td>
+                                            <span class="cell-title">Nombre: </span></span><br>
+                                            <span class="cell-title">Cédula: </span></span>
+
+                                        </td>
+                                        <td>
+                                            <p><span class="cell-title">Teléfono: </span>4245373449</p>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex justify-content-center flex-column align-items-center">
+                                                <div class="actions-btn-container edit"><button type="button"
+                                                        class="btn" data-toggle="modal" data-target="#exampleModal">
+                                                        <i class="ti-pencil"></i>
+                                                    </button>
+                                                </div>
+                                                <div class="actions-btn-container "><button type="button" class="btn"
+                                                        data-toggle="modal" data-target="#exampleModal">
+                                                        <i class="ti-trash"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                        </td>
+                                        <td>
+                                            La Chorerra
+                                        </td>
+                                        <td>
+                                            PS-T-97
+                                        </td>
+                                        <td>
+                                            Aprobada
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Taxi la Grulla</td>
+                                        <td>
+                                            <p><span class="cell-title">Nombre: </span>Marcos
+                                                Vidal</p><br>
+                                            <p><span class="cell-title">Email: </span>marcoseead@gmail.com</p><br>
+                                            <p><span class="cell-title">Teléfono: </span>4245373449</p>
+                                        </td>
+                                        <td>
+                                            <span class="cell-title">Nombre: </span></span><br>
+                                            <span class="cell-title">Cédula: </span></span>
+
+                                        </td>
+                                        <td>
+                                            <p><span class="cell-title">Teléfono: </span>4245373449</p>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex justify-content-center flex-column align-items-center">
+                                                <div class="actions-btn-container edit"><button type="button"
+                                                        class="btn" data-toggle="modal" data-target="#exampleModal">
+                                                        <i class="ti-pencil"></i>
+                                                    </button>
+                                                </div>
+                                                <div class="actions-btn-container "><button type="button" class="btn"
+                                                        data-toggle="modal" data-target="#exampleModal">
+                                                        <i class="ti-trash"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                        </td>
+                                        <td>
+                                            La Chorerra
+                                        </td>
+                                        <td>
+                                            PS-T-97
+                                        </td>
+                                        <td>
+                                            Aprobada
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Taxi la Grulla</td>
+                                        <td>
+                                            <p><span class="cell-title">Nombre: </span>Marcos
+                                                Vidal</p><br>
+                                            <p><span class="cell-title">Email: </span>marcoseead@gmail.com</p><br>
+                                            <p><span class="cell-title">Teléfono: </span>4245373449</p>
+                                        </td>
+                                        <td>
+                                            <span class="cell-title">Nombre: </span></span><br>
+                                            <span class="cell-title">Cédula: </span></span>
+
+                                        </td>
+                                        <td>
+                                            <p><span class="cell-title">Teléfono: </span>4245373449</p>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex justify-content-center flex-column align-items-center">
+                                                <div class="actions-btn-container edit"><button type="button"
+                                                        class="btn" data-toggle="modal" data-target="#exampleModal">
+                                                        <i class="ti-pencil"></i>
+                                                    </button>
+                                                </div>
+                                                <div class="actions-btn-container "><button type="button" class="btn"
+                                                        data-toggle="modal" data-target="#exampleModal">
+                                                        <i class="ti-trash"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                        </td>
+                                        <td>
+                                            La Chorerra
+                                        </td>
+                                        <td>
+                                            PS-T-97
+                                        </td>
+                                        <td>
+                                            Aprobada
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Taxi la Grulla</td>
+                                        <td>
+                                            <p><span class="cell-title">Nombre: </span>Marcos
+                                                Vidal</p><br>
+                                            <p><span class="cell-title">Email: </span>marcoseead@gmail.com</p><br>
+                                            <p><span class="cell-title">Teléfono: </span>4245373449</p>
+                                        </td>
+                                        <td>
+                                            <span class="cell-title">Nombre: </span></span><br>
+                                            <span class="cell-title">Cédula: </span></span>
+
+                                        </td>
+                                        <td>
+                                            <p><span class="cell-title">Teléfono: </span>4245373449</p>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex justify-content-center flex-column align-items-center">
+                                                <div class="actions-btn-container edit"><button type="button"
+                                                        class="btn" data-toggle="modal" data-target="#exampleModal">
+                                                        <i class="ti-pencil"></i>
+                                                    </button>
+                                                </div>
+                                                <div class="actions-btn-container "><button type="button" class="btn"
+                                                        data-toggle="modal" data-target="#exampleModal">
+                                                        <i class="ti-trash"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                        </td>
+                                        <td>
+                                            La Chorerra
+                                        </td>
+                                        <td>
+                                            PS-T-97
+                                        </td>
+                                        <td>
+                                            Aprobada
+                                        </td>
+
+                                    </tr>
+
+
+                                </tbody>
+
+                            </table>
+                        </div>
+
                     </div>
                 </div>
+                <div class="nueva-empresa-form" id="nueva-empresa-form">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>
+                                Nueva Empresa
+                            </h2>
+
+                        </div>
+                        <div class="col-md-6 table-actions d-flex justify-content-end ">
+                            <button class="btn btn-primary" id="empresas-registradas-btn">
+                                <div class="d-inline mr-2"><i class="ti-arrow-left "></i></div> Volver
+                            </button>
+                        </div>
+
+                        </form>
+                        <div class="col-md-12  mt-4">
+                            <form action="#" method="post" id="nueva-empresa-form">
+                                <div class="form-row">
+                                    <div class="form-group col-md-4 col-sm-12">
+                                        <label for="nombreempresa">Nombre de la Empresa</label>
+                                        <input type="text" class="form-control" name="nombreempresa"
+                                            placeholder="Nombre de la empresa" />
+                                    </div>
+                                    <div class="form-group col-md-4 col-sm-12">
+                                        <label for="nombredueño">Nombre del Dueño</label>
+                                        <input type="text" class="form-control" name="nombredueño"
+                                            placeholder="Nombre del Dueño" />
+                                    </div>
+                                    <div class="form-group col-md-4 col-sm-12">
+                                        <label for="tlfdueño">Telefono del Dueño</label>
+                                        <input type="text" class="form-control" name="tlfdueño"
+                                            placeholder="Telefono del Dueño" />
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-4 col-sm-12">
+                                        <label for="correoempresa">Correo de la Empresa</label>
+                                        <input type="email" class="form-control" name="correoempresa"
+                                            placeholder="Correo de la Empresa" />
+                                    </div>
+                                    <div class="form-group col-md-4 col-sm-12">
+                                        <label for="tlfempresa">Teléfono de la Empresa</label>
+                                        <input class="form-control" name="tlfempresa"
+                                            placeholder="Teléfono de la Empresa" />
+                                    </div>
+                                    <div class="form-group col-md-4 col-sm-12">
+                                        <label for="tlf2">Teléfono 2</label>
+                                        <input type="text" class="form-control" name="tlf2" placeholder="Teléfono 2" />
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-12 col-sm-12">
+                                        <label for="direccionempresa">Dirección de la Empresa</label>
+                                        <textarea class="form-control" name="direccionempresa" rows="3"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class=" d-flex justify-content-end">
+                                    <button type="submit" class="btn btn-success">Enviar Reporte</button>
+                                </div>
+                            </form>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="editar-empresa-form" id="editar-empresa-form">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>
+                                Editar Empresa
+                            </h2>
+
+                        </div>
+                        <div class="col-md-6 table-actions d-flex justify-content-end ">
+                            <button class="btn btn-primary" id="empresas-registradas-edit-btn">
+                                <div class="d-inline mr-2"><i class="ti-arrow-left "></i></div> Volver
+                            </button>
+                        </div>
+
+                        </form>
+                        <div class="col-md-12  mt-4">
+                            <form action="#" method="post" id="editar-empresa-form">
+                                <div class="form-row">
+                                    <div class="form-group col-md-4 col-sm-12">
+                                        <label for="nombreempresa">Nombre de la Empresa</label>
+                                        <input type="text" class="form-control" name="nombreempresa" id="nombreempresa"
+                                            placeholder="Nombre de la empresa" />
+                                    </div>
+                                    <div class="form-group col-md-4 col-sm-12">
+                                        <label for="nombredueño">Nombre del Dueño</label>
+                                        <input type="text" class="form-control" name="nombredueño" id="nombredueño"
+                                            placeholder="Nombre del Dueño" />
+                                    </div>
+                                    <div class="form-group col-md-4 col-sm-12">
+                                        <label for="tlfdueño">Telefono del Dueño</label>
+                                        <input type="text" class="form-control" name="tlfdueño" id="tlfdueño"
+                                            placeholder="Telefono del Dueño" />
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-4 col-sm-12">
+                                        <label for="correoempresa">Correo de la Empresa</label>
+                                        <input type="email" class="form-control" name="correoempresa" id="correoempresa"
+                                            placeholder="Correo de la Empresa" />
+                                    </div>
+                                    <div class="form-group col-md-4 col-sm-12">
+                                        <label for="tlfempresa">Teléfono de la Empresa</label>
+                                        <input class="form-control" name="tlfempresa" id="tlfempresa"
+                                            placeholder="Teléfono de la Empresa" />
+                                    </div>
+                                    <div class="form-group col-md-4 col-sm-12">
+                                        <label for="tlf2">Teléfono 2</label>
+                                        <input type="text" class="form-control" name="tlf2" id="tlf2"
+                                            placeholder="Teléfono 2" />
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-12 col-sm-12">
+                                        <label for="direccionempresa">Dirección de la Empresa</label>
+                                        <textarea class="form-control" name="direccionempresa" id="direccionempresa"
+                                            rows="3"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class=" d-flex justify-content-end">
+                                    <button type="submit" class="btn btn-success ">Enviar Reporte</button>
+                                </div>
+                            </form>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+
 
         </div>
 
@@ -756,12 +845,16 @@
         </div>
     </div>
 </body>
-<script type="text/javascript" src="../vendor/jquery/jquery-3.3.1.slim.min.js"></script>
+<script type="text/javascript" src="../vendor/jquery/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="../vendor/bootstrap/popper.min.js"></script>
 <script type="text/javascript" src="../vendor/bootstrap/bootstrap.min.js"></script>
 <script type="text/javascript" src="../vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
 <script type="text/javascript"
     src="../vendor/bootstrap-datepicker/dist/locales/bootstrap-datepicker.es.min.js"></script>
+<script type="text/javascript" src="../vendor/jscrollpane/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="../vendor/jscrollpane/mwheelIntent.js"></script>
+<script type="text/javascript" src="../vendor/jscrollpane/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" src="../vendor/switchery/dist/switchery.min.js"></script>
 <script type="text/javascript" src="../vendor/DataTables/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="../vendor/DataTables/js/dataTables.bootstrap4.min.js"></script>
 <script type="text/javascript" src="../vendor/DataTables/Responsive/js/dataTables.responsive.min.js"></script>

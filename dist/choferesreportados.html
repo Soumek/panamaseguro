@@ -12,17 +12,148 @@
     <link rel="stylesheet" href="../vendor/pe7-icons/assets/Pe-icon-7-stroke.css">
     <link rel="stylesheet" href="../vendor/material-design-iconic-font/css/material-design-iconic-font.min.css">
     <link rel="stylesheet" href="../vendor/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../vendor/jscrollpane/jquery.jscrollpane.css">
+    <link rel="stylesheet" href="../vendor/switchery/dist/switchery.min.css">
     <link rel="stylesheet" href="../vendor/DataTables/css/jquery.dataTables.min.css">
     <link rel="stylesheet" href="../vendor/DataTables/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="../vendor/DataTables/Responsive/css/responsive.bootstrap4.min.css">
     <link rel="stylesheet" href="../vendor/DataTables/Buttons/css/buttons.dataTables.min.css">
     <link rel="stylesheet" href="../vendor/DataTables/Buttons/css/buttons.bootstrap4.min.css">
-    <link rel="stylesheet" href="../vendor/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css" />
     <title>Panamá Seguro</title>
 </head>
 
 <body>
+    <div class="site-sidebar-second custom-scroll custom-scroll-dark">
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link tabs active" data-toggle="tab" href="#tab-1" role="tab">Chat</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link tabs" data-toggle="tab" href="#tab-2" role="tab">Ajustes</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" id="tab-1" role="tabpanel">
+                <div class="sidebar-chat animated fadeIn">
+                    <div class="sidebar-group">
+                        <h6>Chat Grupales</h6>
+                        <a class="text-black" href="#">
+                            <span class="sc-status bg-success"></span>
+                            <span class="sc-name">Taxis La Grulla</span>
+                        </a>
+                        <a class="text-black" href="#">
+                            <span class="sc-status bg-success"></span>
+                            <span class="sc-name">Taxis Miami</span>
+                        </a>
+                        <a class="text-black" href="#">
+                            <span class="sc-status bg-danger"></span>
+                            <span class="sc-name">Taxis Diluvio</span>
+                            <span class="tag tag-primary">7</span>
+                        </a>
+                    </div>
+                    <div class="sidebar-group">
+                        <h6>Chats</h6>
+                        <a class="text-black" href="#">
+                            <span class="sc-status bg-secondary"></span>
+                            <span class="sc-name">Juan Pérez</span>
+                        </a>
+                        <a class="text-black" href="#">
+                            <span class="sc-status bg-success"></span>
+                            <span class="sc-name">Marcos Vidal</span>
+                            <span class="sc-writing"> Escribiendo...<i class="ti-pencil"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="sidebar-chat-window animated fadeIn">
+                    <div class="scw-header clearfix">
+                        <a class="text-grey f-left" href="#"><i class="ti-angle-left"></i> Back</a>
+                        <div class="f-right">
+                            <strong>Juan Pérez</strong>
+                            <div class="avatar box-32">
+                                <img src="assets/img/avatars/5.jpg" alt="">
+                                <span class="status bg-success top right"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scw-item">
+                        <span>¡Hola!</span>
+                    </div>
+                    <div class="scw-item self">
+                        <span>Reunión a las 4pm en la sala de conferencias, ¿Recuerdas?</span>
+                    </div>
+                    <div class="scw-item">
+                        <span>No hay problema, ¡Gracias por recordarmelo!</span>
+                    </div>
+                    <div class="scw-item self">
+                        <span>Prepárate para ser sorprendido.</span>
+                    </div>
+                    <div class="scw-item">
+                        <span>Bien. ¡No puedo esperar!</span>
+                    </div>
+                    <div class="scw-form d-flex ">
+                        <form>
+                            <input class="form-control" type="text" placeholder="Type...">
+                            <button class="btn btn-secondary" type="button"><i class="ti-angle-right"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane" id="tab-2" role="tabpanel">
+                <div class="sidebar-settings animated fadeIn">
+                    <div class="sidebar-group">
+                        <h6>Principales</h6>
+                        <div class="ss-item">
+                            <div class="text-truncate">Cualquiera se puede registrar</div>
+                            <div class="ss-checkbox"><input type="checkbox" class="js-switch" data-size="small"
+                                    data-color="#3e70c9" checked></div>
+                        </div>
+                        <div class="ss-item">
+                            <div class="text-truncate">Permitir Notificaciones</div>
+                            <div class="ss-checkbox"><input type="checkbox" class="js-switch" data-size="small"
+                                    data-color="#3e70c9">
+                            </div>
+                        </div>
+                        <div class="ss-item">
+                            <div class="text-truncate">Permitir Borrar</div>
+                            <div class="ss-checkbox"><input type="checkbox" class="js-switch" data-size="small"
+                                    data-color="#3e70c9">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-group">
+                        <h6>Notificaciones</h6>
+                        <div class="ss-item">
+                            <div class="text-truncate">Actualizaciones</div>
+                            <div class="ss-checkbox"><input type="checkbox" class="js-switch" data-size="small"
+                                    data-color="#3e70c9">
+                            </div>
+                        </div>
+                        <div class="ss-item">
+                            <div class="text-truncate">Mensajes</div>
+                            <div class="ss-checkbox"><input type="checkbox" class="js-switch" data-size="small"
+                                    data-color="#3e70c9" checked></div>
+                        </div>
+                    </div>
+                    <div class="sidebar-group">
+                        <h6>Seguridad</h6>
+                        <div class="ss-item">
+                            <div class="text-truncate">Backup Diario</div>
+                            <div class="ss-checkbox"><input type="checkbox" class="js-switch" data-size="small"
+                                    data-color="#3e70c9" checked></div>
+                        </div>
+                        <div class="ss-item">
+                            <div class="text-truncate">Acceso API</div>
+                            <div class="ss-checkbox"><input type="checkbox" class="js-switch" data-size="small"
+                                    data-color="#3e70c9" checked></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <nav class="navbar user-navbar navbar-expand-md fixed-top bg-dark">
         <a class="navbar-brand" href="#">Panamá <span>Seguro</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -96,8 +227,9 @@
                         <a class="dropdown-item" href="#"><i class="ti-power-off m-r-0-5"></i>Salir</a>
                     </div>
                 </li>
-                <li class="nav-item navbar-sidebar">
-                    <a class="nav-link " href="#"><i class="ti-arrow-left"></i> </a>
+                <li class="nav-item navbar-sidebar site-sidebar-second-toggle">
+                    <a class="nav-link " href="#" data-toggle="collapse"><i class="ti-arrow-left"></i> </a>
+
                 </li>
             </ul>
         </div>
@@ -127,14 +259,21 @@
                                             <span>Choferes</span> </a>
                                         <div class="dropdown-menu dropdown-dashboard-menu animated slideInDown"
                                             aria-labelledby="dashboard-menu-choferes">
-                                            <a class="btn btn-primary outlined" href="consultarchofer.html">Consultar
-                                                Chofer</a>
-                                            <a class="btn btn-primary outlined" href="registrarchofer.html">Registrar
-                                                Chofer</a>
-                                            <a class="btn btn-primary outlined" href="reportarchofer.html">Reportar
-                                                Chofer</a>
-                                            <a class="btn btn-primary outlined" href="choferesreportados.html">Choferes
-                                                Reportados</a>
+                                            <div>
+
+                                                <a class="btn btn-primary outlined"
+                                                    href="consultarchofer.html">Consultar
+                                                    Chofer</a>
+                                                <a class="btn btn-primary outlined"
+                                                    href="registrarchofer.html">Registrar
+                                                    Chofer</a>
+                                                <a class="btn btn-primary outlined" href="reportarchofer.html">Reportar
+                                                    Chofer</a>
+                                                <a class="btn btn-primary outlined"
+                                                    href="choferesreportados.html">Choferes
+                                                    Reportados</a>
+                                            </div>
+
                                         </div>
                                     </li>
                                     <li class="nav-item dropdown col-md-3 col-sm-3" id="dashboard-menu-panama">
@@ -144,14 +283,20 @@
                                                 Seguro</span> </a>
                                         <div class="dropdown-menu dropdown-dashboard-menu animated slideInDown dropdown-panama "
                                             aria-labelledby="dashboard-menu-panama">
-                                            <a class="btn btn-primary outlined" href="consultarchofer.html">Consultar
-                                                Chofer2</a>
-                                            <a class="btn btn-primary outlined" href="registrarchofer.html">Registrar
-                                                Chofer</a>
-                                            <a class="btn btn-primary outlined" href="reportarchofer.html">Reportar
-                                                Chofer</a>
-                                            <a class="btn btn-primary outlined" href="choferesreportados.html">Choferes
-                                                Reportados</a>
+                                            <div>
+
+                                                <a class="btn btn-primary outlined"
+                                                    href="consultarchofer.html">Consultar
+                                                    Chofer2</a>
+                                                <a class="btn btn-primary outlined"
+                                                    href="registrarchofer.html">Registrar
+                                                    Chofer</a>
+                                                <a class="btn btn-primary outlined" href="reportarchofer.html">Reportar
+                                                    Chofer</a>
+                                                <a class="btn btn-primary outlined"
+                                                    href="choferesreportados.html">Choferes
+                                                    Reportados</a>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="nav-item dropdown col-md-3 col-sm-3" id="dashboard-menu-usuarios">
@@ -162,32 +307,26 @@
                                                 Usuarios</span> </a>
                                         <div class="dropdown-menu dropdown-dashboard-menu animated slideInDown dropdown-usuarios"
                                             aria-labelledby="dashboard-menu-usuarios">
-                                            <a class="btn btn-primary outlined" href="consultarchofer.html">Consultar
-                                                Chofer3</a>
-                                            <a class="btn btn-primary outlined" href="registrarchofer.html">Registrar
-                                                Chofer</a>
-                                            <a class="btn btn-primary outlined" href="reportarchofer.html">Reportar
-                                                Chofer</a>
-                                            <a class="btn btn-primary outlined" href="choferesreportados.html">Choferes
-                                                Reportados</a>
+                                            <div>
+
+                                                <a class="btn btn-primary outlined"
+                                                    href="consultarchofer.html">Consultar
+                                                    Chofer3</a>
+                                                <a class="btn btn-primary outlined"
+                                                    href="registrarchofer.html">Registrar
+                                                    Chofer</a>
+                                                <a class="btn btn-primary outlined" href="reportarchofer.html">Reportar
+                                                    Chofer</a>
+                                                <a class="btn btn-primary outlined"
+                                                    href="choferesreportados.html">Choferes
+                                                    Reportados</a>
+                                            </div>
                                         </div>
                                     </li>
-                                    <li class="nav-item dropdown col-md-3 col-sm-3" id="dashboard-menu-empresas">
-                                        <a class="nav-link dashboard-menu-item dashboard-menu-item-last"
-                                            id="dropdown-empresas" href="#" role="button" data-toggle="dropdown"
-                                            aria-haspopup="true" aria-expanded="false"><i class="ti-briefcase"></i>
+                                    <li class="nav-item  col-md-3 col-sm-3">
+                                        <a class="nav-link dashboard-menu-item dashboard-menu-item-last "
+                                            href="empresasregistradas.html" role=" button"><i class="ti-briefcase"></i>
                                             <span>Empresas / Afiliados</span> </a>
-                                        <div class="dropdown-menu dropdown-dashboard-menu animated slideInDown dropdown-empresas"
-                                            aria-labelledby="dashboard-menu-empresas">
-                                            <a class="btn btn-primary outlined" href="consultarchofer.html">Consultar
-                                                Chofer4</a>
-                                            <a class="btn btn-primary outlined" href="registrarchofer.html">Registrar
-                                                Chofer</a>
-                                            <a class="btn btn-primary outlined" href="reportarchofer.html">Reportar
-                                                Chofer</a>
-                                            <a class="btn btn-primary outlined" href="choferesreportados.html">Choferes
-                                                Reportados</a>
-                                        </div>
                                     </li>
                                 </ul>
                             </nav>
@@ -511,6 +650,10 @@
 <script type="text/javascript" src="../vendor/jquery/jquery-3.3.1.slim.min.js"></script>
 <script type="text/javascript" src="../vendor/bootstrap/popper.min.js"></script>
 <script type="text/javascript" src="../vendor/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="../vendor/jscrollpane/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="../vendor/jscrollpane/mwheelIntent.js"></script>
+<script type="text/javascript" src="../vendor/jscrollpane/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" src="../vendor/switchery/dist/switchery.min.js"></script>
 <script type="text/javascript" src="../vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
 <script type="text/javascript"
     src="../vendor/bootstrap-datepicker/dist/locales/bootstrap-datepicker.es.min.js"></script>

@@ -4,7 +4,7 @@ $(document).ready(function() {
     ================================================================= */
 
   $('#table-1').DataTable({
-    dom: '<"col-md-12"t><"row"<"col-md-12 col-12"p>>',
+    dom: '<"col-md-12"t><"row paginacion"<"col-md-12 col-12"p>>',
     responsive: true,
     searching: false,
     ordering: true,

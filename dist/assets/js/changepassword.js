@@ -9,7 +9,7 @@ $(document).ready(function() {
         var options = this.options;
         return (
           '<div class="clearfix">' +
-          '<button class="btn btn-primary" data-target="#' +
+          '<button class="btn btn-secondary" data-target="#' +
           this.id +
           '" data-wizard="back">Atrás</button>' +
           '<button class="btn btn-success f-right" data-target="#' +
