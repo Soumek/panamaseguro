@@ -36,3 +36,531 @@
 <script type="text/javascript" src="assets/js/consultarchofer.js"></script>
 
 </html>
+
+
+
+<section class="col-md-12 dashboard-page-content">
+    <div id="dashboard-chofer-table">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>
+            Listado de Choferes
+          </h2>
+        </div>
+        <div class="col-md-6 table-actions">
+          <button class="btn btn-primary d-flex
+            justify-content-center align-items-center"
+            id="nuevo-chofer-btn">
+            <div class="d-inline-flex mr-2"><i class="ti-plus"></i></div>
+            Nuevo
+            Chofer
+          </button>
+
+
+        </div>
+        <div class="col-md-12 table-container mt-4">
+
+          <table class="table table-bordered hover dataTable"
+            id="table-1">
+            <thead>
+              <tr>
+                <th class="all">Foto</th>
+                <th class="desktop tablet-l tablet-p">Información Personal</th>
+                <th class="desktop tablet-l">Estado</th>
+                <th class="all"></th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><img class="row-image-photo"
+                    src="assets/img/avatars/default.png" /></td>
+                <td><div class="dashboard-chofer-info mt-2">
+                    <p><span class="cell-title">Nombre: </span>José
+                      Antonio
+                      Ramos Zoto</p>
+                    <p><span class="cell-title">Cédula: </span>19070484</p>
+                    <p><span class="cell-title">Teléfono: </span>4245373449</p>
+                    <p><span class="cell-title">Dirección: </span>Barrio
+                      las
+                      Lomas, la chorrera</p>
+                  </div> </td>
+                <td class="align-middle"><div class="d-flex flex-column
+                    ml-2 dashboard-chofer-status">
+                    <div class="mb-3">
+                      <button class="btn btn-success mr-2 d-inline-flex"
+                        type="button"><i
+                          class="ti-check"></i></button> <label
+                        class="d-inline align-middle"
+                        for="contratochofer">Contratado</label></div>
+                    <div class="mb-3"><button class="btn btn-secondary
+                        outlined
+                        btn-rounded px-5">
+                        Solicitar Referencias
+                      </button></div>
+                    <div class=""><p>Contratado tambien por: <span
+                          class="cell-title">PS-R-46</span></p></div>
+                  </div></td>
+                <td class="align-middle">
+                  <div class="d-flex justify-content-center
+                    flex-column align-items-center
+                    justify-content-center">
+                    <div class="actions-btn-container edit"><button
+                        type="button"
+                        class="btn edit">
+                        <i class="ti-pencil"></i>
+                      </button>
+                    </div>
+                    <div class="actions-btn-container delete"><button
+                        type="button" class="btn"
+                        data-toggle="modal"
+                        data-target="#exampleModal">
+                        <i class="ti-trash"></i>
+                      </button>
+                    </div>
+                  </div>
+
+                </tr>
+                <tr>
+                  <td><img class="row-image-photo"
+                      src="assets/img/avatars/default.png" /></td>
+                  <td><div class="dashboard-chofer-info mt-2">
+                      <p><span class="cell-title">Nombre: </span>José
+                        Antonio
+                        Ramos Zoto</p>
+                      <p><span class="cell-title">Cédula: </span>19070484</p>
+                      <p><span class="cell-title">Teléfono: </span>4245373449</p>
+                      <p><span class="cell-title">Dirección: </span>Barrio
+                        las
+                        Lomas, la chorrera</p>
+                    </div> </td>
+                  <td class="align-middle"><div class="d-flex flex-column
+                      ml-2 dashboard-chofer-status">
+                      <div class="mb-3">
+                        <button class="btn btn-grey mr-2 d-inline-flex"
+                          type="button"><i
+                            class="ti-close"></i></button> <label
+                          class="d-inline align-middle"
+                          for="contratochofer">No Contratado</label></div>
+                      <div class="mb-3"><button class="btn btn-secondary
+                          outlined
+                          btn-rounded px-5">
+                          Solicitar Referencias
+                        </button></div>
+                      <div class=""><p>Contratado tambien por: <span
+                            class="cell-title">PS-R-46</span></p></div>
+                    </div></td>
+                  <td class="align-middle">
+                    <div class="d-flex justify-content-center
+                      flex-column align-items-center
+                      justify-content-center">
+                      <div class="actions-btn-container edit"><button
+                          type="button"
+                          class="btn edit">
+                          <i class="ti-pencil"></i>
+                        </button>
+                      </div>
+                      <div class="actions-btn-container delete"><button
+                          type="button" class="btn"
+                          data-toggle="modal"
+                          data-target="#exampleModal">
+                          <i class="ti-trash"></i>
+                        </button>
+                      </div>
+                    </div>
+
+                  </tr>
+                  <tr>
+                    <td>15.353.323</td>
+                    <td>José María Palacio Blanco </td>
+                    <td>19-06-2019/ 17:48:00</td>
+                    <td>
+                      <div class="contract-btn-container"><button
+                          class="btn
+                          btn-success static btn-static"
+                          type="button"><i class="ti-check"></i></button></div>
+                    </td>
+
+                  </tr>
+                  <tr>
+                    <td>15.353.323</td>
+                    <td>José María Palacio Blanco </td>
+                    <td>19-06-2019/ 17:48:00</td>
+                    <td>
+                      <div class="contract-btn-container"><button
+                          class="btn
+                          btn-danger" type="button"><i
+                            class="ti-check"></i></button></div>
+                    </td>
+
+                  </tr>
+                  <tr>
+                    <td>15.353.323</td>
+                    <td>José María Palacio Blanco </td>
+                    <td>19-06-2019/ 17:48:00</td>
+                    <td>
+                      <div class="contract-btn-container"><button
+                          class="btn
+                          btn-success" type="button"><i
+                            class="ti-close"></i></button></div>
+                    </td>
+
+                  </tr>
+                  <tr>
+                    <td>15.353.323</td>
+                    <td>AOL browser (AOL desktop)</td>
+                    <td>19-06-2019/ 17:48:00</td>
+                    <td>
+                      <div class="contract-btn-container"><button
+                          class="btn
+                          btn-success" type="button"><i
+                            class="ti-check"></i></button></div>
+                    </td>
+
+                  </tr>
+                  <tr>
+                    <td>15.353.323</td>
+                    <td>Firefox 1.0</td>
+                    <td>19-06-2019/ 17:48:00</td>
+                    <td>
+                      <div class="contract-btn-container"><button
+                          class="btn
+                          btn-danger" type="button"><i
+                            class="ti-close"></i></button></div>
+                    </td>
+
+                  </tr>
+                  <tr>
+                    <td>15.353.323</td>
+                    <td>Firefox 1.0</td>
+                    <td>19-06-2019/ 17:48:00</td>
+                    <td>
+                      <div class="contract-btn-container"><button
+                          class="btn
+                          btn-danger" type="button"><i
+                            class="ti-close"></i></button></div>
+                    </td>
+
+                  </tr>
+                  <tr>
+                    <td>15.353.323</td>
+                    <td>Firefox 1.0</td>
+                    <td>19-06-2019/ 17:48:00</td>
+                    <td>
+                      <div class="contract-btn-container"><button
+                          class="btn
+                          btn-danger" type="button"><i
+                            class="ti-close"></i></button></div>
+                    </td>
+
+                  </tr>
+                  <tr>
+                    <td>15.353.323</td>
+                    <td>Firefox 1.0</td>
+                    <td>19-06-2019/ 17:48:00</td>
+                    <td>
+                      <div class="contract-btn-container"><button
+                          class="btn
+                          btn-danger" type="button"><i
+                            class="ti-close"></i></button></div>
+                    </td>
+
+                  </tr>
+                  <tr>
+                    <td>15.353.323</td>
+                    <td>Firefox 1.0</td>
+                    <td>19-06-2019/ 17:48:00</td>
+                    <td>
+                      <div class="contract-btn-container"><button
+                          class="btn
+                          btn-danger" type="button"><i
+                            class="ti-close"></i></button></div>
+                    </td>
+
+                  </tr>
+                </tbody>
+
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="di-none" id="dashboard-chofer-form">
+          <div class="row">
+            <div class="col-md-12 mb-4">
+              <div class="row">
+                <div class="col-md-3 d-flex align-items-center">
+                  <h2 class="reportar-chofer-title">
+                    Datos personales y de contacto
+                  </h2>
+                </div>
+                <div class="col-md-4 offset-md-5
+                  reportar-chofer-filter-container">
+                  <form>
+                    <div class="row">
+                      <div class="col-md-12 d-flex
+                        reportar-chofer-filter">
+                        <input class="form-control" type="text"
+                          placeholder="12415340" />
+                        <button class="btn btn-primary">
+                          <i class="ti-search"></i>
+                        </button>
+                      </div>
+
+                    </div>
+
+                  </form>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 registrarchofer">
+              <form action="#" method="post">
+                <div class="form-row mb-5">
+                  <div class="form-group col-md-4 col-sm-12">
+                    <label for="cedulachofer">Cédula del Chofer</label>
+                    <input type="text" class="form-control"
+                      name="cedulachofer"
+                      placeholder="Ingresa el número de cédula" />
+                  </div>
+                  <div class="form-group col-md-4 col-sm-12">
+                    <label for="nombrechofer">Nombre del Chofer</label>
+                    <input type="text" class="form-control"
+                      name="nombrechofer"
+                      placeholder="Ingresa el nombre del chofer" />
+                  </div>
+                  <div class="form-group col-md-4 col-sm-12">
+                    <label for="apellidochofer">Apellido del Chofer</label>
+                    <input type="text" class="form-control"
+                      name="apellidochofer"
+                      placeholder="Ingresa el apellido del chofer" />
+                  </div>
+
+                </div>
+                <div class="form-row mb-5">
+
+                  <div class="form-group col-md-4 col-sm-12">
+                    <label for="tlfchofer">Número de Telefono</label>
+                    <input type="text" class="form-control"
+                      name="tlfchofer"
+                      placeholder="Ingrese el número de teléfono" />
+                  </div>
+                  <div class="form-group col-md-4 col-sm-12">
+                    <label for="tlfchofer2">Telefono 2(opcional)</label>
+                    <input type="text" class="form-control"
+                      name="tlfchofer2"
+                      placeholder="Telefono 2" />
+                  </div>
+                  <div class="form-group col-md-4 col-sm-12">
+                    <label for="tlfchofer3">Telefono 3(opcional)</label>
+                    <input type="text" class="form-control"
+                      name="tlfchofer3"
+                      placeholder="Telefono 3" />
+                  </div>
+
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-2 col-sm-12">
+                    <label for="atrasochofer">Sexo</label>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio"
+                        name="gridRadios" id="gridRadios1"
+                        value="option1" checked>
+                      <label class="form-check-label" for="gridRadios1">
+                        Masculino
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio"
+                        name="gridRadios" id="gridRadios2"
+                        value="option2">
+                      <label class="form-check-label" for="gridRadios2">
+                        Femenino
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group col-md-2 col-sm-12 d-flex
+                    flex-column align-items-center">
+                    <label for="contratochofer">Contratado</label>
+                    <button class="btn btn-secondary btn-contratado
+                      contratado" type="button"
+                      id="btn-contratado"><i class="ti-check"
+                        id="icon-contratado"></i></button>
+                  </div>
+                  <div class="form-group col-md-8 col-sm-12">
+                    <label for="direccionchofer">Dirección</label>
+                    <input type="text" class="form-control"
+                      name="direccionchofer"
+                      placeholder="Ingresa la dirección del chofer" />
+                  </div>
+                </div>
+
+                <div class="d-flex justify-content-end mt-3">
+                  <button class="btn btn-primary d-flex
+                    justify-content-center align-items-center mr-3"
+                    id="table-chofer-btn" type="button">
+                    <div class="d-inline-flex mr-2"><i
+                        class="ti-arrow-left"></i></div> Volver al listado
+                  </button>
+                  <button type="submit" class="btn btn-success">Registrar
+                    Chofer</button>
+                </div>
+              </form>
+
+            </div>
+          </div>
+        </div>
+        <div class="di-none" id="dashboard-chofer-edit">
+          <div class="row">
+            <div class="col-md-12 mb-4">
+              <div class="row">
+                <div class="col-md-3 d-flex align-items-center">
+                  <h2 class="reportar-chofer-title">
+                    Datos personales y de contacto
+                  </h2>
+                </div>
+                <div class="col-md-4 offset-md-5
+                  reportar-chofer-filter-container">
+                  <form>
+                    <div class="row">
+                      <div class="col-md-12 d-flex
+                        reportar-chofer-filter">
+                        <input class="form-control" type="text"
+                          placeholder="12415340" />
+                        <button class="btn btn-primary">
+                          <i class="ti-search"></i>
+                        </button>
+                      </div>
+
+                    </div>
+
+                  </form>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 registrarchofer">
+              <form action="#" method="post">
+                <div class="form-row mb-5">
+                  <div class="form-group col-md-4 col-sm-12">
+                    <label for="cedulachofer">Cédula del Chofer</label>
+                    <input type="text" class="form-control"
+                      name="cedulachofer" id="cedulachofer"
+                      placeholder="Ingresa el número de cédula" />
+                  </div>
+                  <div class="form-group col-md-4 col-sm-12">
+                    <label for="nombrechofer">Nombre del Chofer</label>
+                    <input type="text" class="form-control"
+                      name="nombrechofer" id="nombrechofer"
+                      placeholder="Ingresa el nombre del chofer" />
+                  </div>
+                  <div class="form-group col-md-4 col-sm-12">
+                    <label for="apellidochofer">Apellido del Chofer</label>
+                    <input type="text" class="form-control"
+                      name="apellidochofer" id="apellidochofer"
+                      placeholder="Ingresa el apellido del chofer" />
+                  </div>
+
+                </div>
+                <div class="form-row mb-5">
+
+                  <div class="form-group col-md-4 col-sm-12">
+                    <label for="tlfchofer">Número de Telefono</label>
+                    <input type="text" class="form-control" id="tlfchofer"
+                      name="tlfchofer"
+                      placeholder="Ingrese el número de teléfono" />
+                  </div>
+                  <div class="form-group col-md-4 col-sm-12">
+                    <label for="tlfchofer2">Telefono 2(opcional)</label>
+                    <input type="text" class="form-control"
+                      name="tlfchofer2"
+                      placeholder="Telefono 2" />
+                  </div>
+                  <div class="form-group col-md-4 col-sm-12">
+                    <label for="tlfchofer3">Telefono 3(opcional)</label>
+                    <input type="text" class="form-control"
+                      name="tlfchofer3"
+                      placeholder="Telefono 3" />
+                  </div>
+
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-2 col-sm-12">
+                    <label for="atrasochofer">Sexo</label>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio"
+                        name="gridRadios" id="gridRadios1"
+                        value="option1" checked>
+                      <label class="form-check-label" for="gridRadios1">
+                        Masculino
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio"
+                        name="gridRadios" id="gridRadios2"
+                        value="option2">
+                      <label class="form-check-label" for="gridRadios2">
+                        Femenino
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group col-md-2 col-sm-12 d-flex
+                    flex-column align-items-center">
+                    <label for="contratochofer">Contratado</label>
+                    <button class="btn btn-secondary btn-contratado
+                      contratado" type="button"
+                      id="btn-contratado"><i class="ti-check"
+                        id="icon-contratado"></i></button>
+                  </div>
+                  <div class="form-group col-md-8 col-sm-12">
+                    <label for="direccionchofer">Dirección</label>
+                    <input type="text" class="form-control"
+                      name="direccionchofer" id="direccionchofer"
+                      placeholder="Ingresa la dirección del chofer" />
+                  </div>
+                </div>
+
+                <div class="d-flex justify-content-end mt-3">
+                  <button class="btn btn-primary d-flex
+                    justify-content-center align-items-center mr-3"
+                    id="table-chofer-edit-btn" type="button">
+                    <div class="d-inline-flex mr-2"><i
+                        class="ti-arrow-left"></i></div> Volver al listado
+                  </button>
+                  <button type="submit" class="btn btn-success">Editar
+                    Chofer</button>
+                </div>
+              </form>
+
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+            <!-- Modal -->
+            <div class="modal modal-notificacion fade" id="exampleModal"
+            tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <div class="d-flex justify-content-center align-items-center
+                    flex-column">
+                    <i class="ti-trash mb-4"></i>
+                    <h5 class="mb-4">Estás a punto de Eliminar a este chofer</h5>
+                    <h4 class="mb-4">¿Estás seguro?</h4>
+                    <div class="d-flex justify-content-center">
+                      <button class="btn btn-success mr-3" type="button"
+                        data-dismiss="modal">Cancelar</button>
+                      <button class="btn btn-aux" type="button">Si, deseo
+                        eliminarlo</button>
+                    </div>
+  
+  
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+          </div>

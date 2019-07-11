@@ -7,6 +7,12 @@
       @include set-color(#fff);
     }
   }
+  &-danger {
+    @include set-background($danger-color);
+  }
+  &-success {
+    @include set-background($success-color);
+  }
 }
 
 //floats
@@ -27,4 +33,18 @@
 //flex
 .justify-content-evenly {
   justify-content: space-evenly !important;
+}
+//display
+.di-none {
+  display: none;
+}
+// Texto
+.text {
+  &-grey {
+    font-size: 1.1rem;
+    color: #838383;
+  }
+  &-secondary {
+    color: $secondary-color !important;
+  }
 }

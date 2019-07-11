@@ -1,0 +1,16 @@
+.listado {
+  &-chofer-info {
+    display: flex;
+    flex-direction: column;
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem !important;
+    }
+  }
+  &-chofer-status {
+    .btn-success,
+    .btn-grey {
+      padding: 0.3rem 0.4rem;
+    }
+  }
+}

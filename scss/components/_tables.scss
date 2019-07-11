@@ -9,9 +9,16 @@
     tbody {
       td {
         padding: 0.7rem 1rem;
+
         > div.contract-btn-container {
           text-align: center;
           .btn {
+            border-radius: 50%;
+          }
+          .bg-danger,
+          .bg-success {
+            display: inline;
+            padding: 0.7rem 0.8rem;
             border-radius: 50%;
           }
         }
@@ -31,9 +38,54 @@
             font-size: 1.2rem;
           }
         }
+        // para los íconos pequeños
+        i {
+          font-size: 1.1rem;
+          font-weight: bold;
+        }
+        //Para las row tipo fotos
+        .row-image-photo {
+          width: 150px;
+          height: 140px;
+        }
+
+        //Para los parrafos dentro de los rows
+        p {
+          display: inline;
+          margin: 0;
+          span.cell-title {
+            font-weight: bold;
+            color: #000;
+          }
+        }
+        span.cell-title {
+          font-weight: bold;
+        }
+        //Para los botones de editar/borrar
+        .actions-btn-container {
+          > .btn {
+            padding: 0;
+            margin-top: 0.5rem;
+          }
+          i {
+            font-size: 1.5rem;
+            color: $grey-color;
+          }
+          &.edit {
+            i:hover {
+              color: #62be73;
+            }
+          }
+          &.delete {
+            i:hover {
+              color: #e71e17;
+            }
+          }
+        }
       }
     }
   }
+
   .dataTables_wrapper {
     .row {
       margin: 0;
@@ -128,6 +180,7 @@
       font-family: 'Courier New', Courier, monospace;
       line-height: 14px;
       min-width: 32px;
+      margin-top: 0.5rem;
       @include psudoicon('\f061 ', 'Free');
       font-size: 0.7rem;
       background-color: $secondary-color;

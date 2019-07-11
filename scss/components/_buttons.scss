@@ -10,6 +10,13 @@
   &-aux {
     @include custom-button($aux-color, $third-color);
   }
+  &-grey {
+    @include custom-button($grey-color);
+    &:hover {
+      transition-duration: 0s;
+      background-color: scale-color($grey-color, $lightness: -40%);
+    }
+  }
   &-danger {
     background-color: $danger-color;
     &.static {
@@ -66,9 +73,24 @@
   i {
     font-size: 1.3rem;
   }
+  &.btn-rounded {
+    border-radius: 20px;
+  }
 }
 
 //outline buttons//
 .outlined {
   background-color: transparent;
+  &.btn-primary {
+    border-color: $third-color;
+    &:hover {
+      border-color: $primary-color;
+    }
+  }
+  &.btn-secondary {
+    color: $secondary-color;
+    &:hover {
+      color: #fff;
+    }
+  }
 }

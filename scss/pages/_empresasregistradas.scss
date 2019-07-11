@@ -12,24 +12,4 @@
   }
 }
 .table-container.empresas-registradas {
-  p {
-    display: inline;
-    margin: 0;
-    span.cell-title {
-      font-weight: bold;
-    }
-  }
-  span.cell-title {
-    font-weight: bold;
-  }
-  .actions-btn-container {
-    i {
-      font-size: 1.5rem;
-    }
-    &.edit {
-      i {
-        color: #62be73;
-      }
-    }
-  }
 }
