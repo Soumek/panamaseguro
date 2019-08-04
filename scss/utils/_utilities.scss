@@ -1,12 +1,29 @@
 // Navbars
 
 .bg {
+  &-primary {
+    @include set-background($primary-color);
+  }
+  &-secondary {
+    @include set-background($secondary-color);
+  }
   &-dark {
     @include set-background($dark-color);
     a {
       @include set-color(#fff);
     }
   }
+  &-grey {
+    @include set-background($grey-color);
+  }
+  &-info {
+    @include set-background($info-color);
+  }
+
+  &-light {
+    @include set-background($light-color);
+  }
+
   &-danger {
     @include set-background($danger-color);
   }

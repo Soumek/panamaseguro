@@ -13,4 +13,13 @@
       padding: 0.3rem 0.4rem;
     }
   }
+  &-chofer-btn-contratado {
+    &.contratado {
+      background-color: $secondary-color;
+    }
+    &.nocontratado {
+      background-color: #4d4d4d !important;
+      border-color: #4d4d4d !important;
+    }
+  }
 }

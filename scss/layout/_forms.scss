@@ -13,3 +13,29 @@
     color: #bec0c2;
   }
 }
+
+//Login / Sing up Form
+.sign-form{
+  .row{
+      margin-left:0;
+      margin-right:0;
+  }
+  .form-material .form-control, .form-material .form-control.focus, .form-material .form-control:focus{
+      background-image: linear-gradient($secondary-color, $secondary-color), linear-gradient(rgba(0, 0, 0, 0.125), rgba(0, 0, 0, 0.125));
+      border: 0 none;
+      border-radius: 0;
+      box-shadow: none;
+      float: none;
+  }
+  .form-material .form-control{
+    font-size:16px;
+  }
+    &-brand{
+        font-size:26px;
+    }
+    &-submitbtn{
+        font-size:17px;
+        padding:0.3rem;
+    }
+
+}

@@ -237,7 +237,7 @@
       <div class="col-md-12 mb-3 dashboard-header-title-container">
         <div class="dashboard-header-title">
           <h4>Dashboard</h4>
-          <h5><a href="dashboard.html">Home</a> / <span>Reportar Chofer</span>
+          <h5><a href="dashboard.html">Home</a> / <span>Editar Perfil</span>
           </h5>
         </div>
       </div>
@@ -295,108 +295,68 @@
           </div>
       </section>
       <section class="col-md-12 dashboard-page-content">
-        <div id="reporte-normal">
+        <div id="nueva-empresa-form">
           <div class="row">
-            <div class="col-md-12 mb-4">
-              <div class="row">
-                <div class="col-md-3 d-flex align-items-center">
-                  <h2 class="dashboard-page-content-title">
-                    Reportar Chofer
-                  </h2>
-                </div>
-                <div class="col-md-4 offset-md-5 dashboard-page-content-filter-container">
-                  <form>
-                    <div class="row">
-                      <div class="col-md-12 d-flex dashboard-page-content-filter">
-                        <input class="form-control" type="text" placeholder="12415340" />
-                        <button class="btn btn-primary">
-                          <i class="ti-search"></i>
-                        </button>
-                      </div>
+            <div class="col-md-12">
+              <h2>
+                Información Personal
+              </h2>
 
-                    </div>
-
-                  </form>
-
-                </div>
-              </div>
             </div>
-            <div class="col-md-12" id="reporte-normal">
-              <form action="#" method="post">
+            <div class="col-md-12 mt-4">
+              <form action="#" method="post" id="nueva-empresa-form">
                 <div class="form-row">
                   <div class="form-group col-md-4 col-sm-12">
-                    <label for="nombrechofer">Nombre del Chofer</label>
-                    <input type="text" class="form-control" name="nombrechofer" placeholder="Jorge Alberto" disabled />
+                    <label for="nombreusuario">Nombre de Usuario</label>
+                    <input type="text" class="form-control" name="nombreusuario" placeholder="Nombre de usuario" />
                   </div>
                   <div class="form-group col-md-4 col-sm-12">
-                    <label for="apellidochofer">Apellido del Chofer</label>
-                    <input type="text" class="form-control" name="apellidochofer" placeholder="Santana Piña" disabled />
+                    <label for="nombredueño">Correo</label>
+                    <input type="text" class="form-control" name="correousuario" placeholder="Correo" />
                   </div>
                   <div class="form-group col-md-4 col-sm-12">
-                    <label for="tlfchofer">Telefonos del Chofer</label>
-                    <input type="text" class="form-control" name="tlfchofer" placeholder="3924699, 46433521" disabled />
+                    <label for="tlfdueño">Teléfono</label>
+                    <input type="text" class="form-control" name="tlfusuario" placeholder="Teléfono" />
                   </div>
                 </div>
-                <div class="form-row">
+                <h5>
+                  Foto de usuario
+                </h5>
+                <div class="form-row justify-content-center">
 
-                  <div class="form-group col-md-6 col-sm-12">
-                    <label for="placachofer">Placa del Auto</label>
-                    <input type="text" class="form-control" name="correoempresa" placeholder="Placa del Auto" />
-                  </div>
-                  <div class="form-group col-md-6 col-sm-12">
-                    <label for="empresachofer">Empresa</label>
-                    <select id="empresachofer" class="form-control">
-                      <option selected>Seleccione...</option>
-                      <option>...</option>
-                      <option>...</option>
-                      <option>...</option>
-                    </select>
-                  </div>
-
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-md-4 col-sm-12">
-                    <label for="deudachofer">Deuda de crédito</label>
-                    <input type="text" class="form-control" name="deudachofer" placeholder="Deuda de crédito" />
-                  </div>
-                  <div class="form-group col-md-4 col-sm-12">
-                    <label for="atrasochofer">Días de Atraso</label>
-                    <input type="text" class="form-control" name="atrasochofer" placeholder="Días de Atraso" />
-                  </div>
-                  <div class="form-group col-md-4 col-sm-12">
-                    <label for="montochofer">Monto Atrasado</label>
-                    <input type="text" class="form-control" name="montochofer" placeholder="Monto Atrasado" />
+                  <div class="form-group col-md-3 col-sm-12">
+                    <input type="file" id="input-file-now" class="dropify" />
                   </div>
                 </div>
+                <h2>
+                  Cambiar Contraseña
+                </h2>
                 <div class="form-row">
-                  <div class="form-group col-md-12 col-sm-12">
-                    <label for="motivoschofer">Motivos</label>
-                    <textarea class="form-control" name="motivoschofer" rows="3"
-                      placeholder="Ingresa al menos un motivo"></textarea>
+                  <div class="form-group col-md-4 col-sm-12">
+                    <label for="actualusuario">Contraseña actual</label>
+                    <input type="text" class="form-control" name="actualusuario" placeholder="Contraseña Actual" />
                   </div>
-                </div>
-                <h5>Foto del chofer</h5>
-                <div class="form-row">
-                  <div class="form-group d-flex justify-content-center col-md-12 col-sm-12">
-                    <div class="col-md-3 col-sm-12">
-                      <input type="file" id="input-file-now" data-min-width="10"
-                        data-default-file="assets/img/avatars/1.jpg" class="
-                        dropify" />
-                    </div>
-
+                  <div class="form-group col-md-4 col-sm-12">
+                    <label for="nuevausuario">Nueva Contraseña</label>
+                    <input type="text" class="form-control" name="nuevausuario" placeholder="Nueva Contraseña" />
+                  </div>
+                  <div class="form-group col-md-4 col-sm-12">
+                    <label for="confirmarusuario">Confirmar Contraseña</label>
+                    <input type="text" class="form-control" name="confirmarusuario"
+                      placeholder="Confirmar Contraseña" />
                   </div>
                 </div>
                 <div class="d-flex justify-content-end">
-                  <button type="submit" class="btn btn-success">Enviar
-                    Reporte</button>
+                  <button type="submit" class="btn btn-success">Guardar
+                    Cambios</button>
                 </div>
               </form>
 
             </div>
 
+
           </div>
         </div>
-
 
       </section>
     </div>
@@ -412,6 +372,6 @@
 <script type="text/javascript" src="../vendor/dropify/dist/js/dropify.min.js"></script>
 
 <script type="text/javascript" src="assets/js/dashboard.js"></script>
-<script type="text/javascript" src="assets/js/reportarchofer.js"></script>
+<script type="text/javascript" src="assets/js/editarperfil.js"></script>
 
 </html>

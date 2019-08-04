@@ -1,15 +1,85 @@
 .consultar-chofer {
-  .panelcarga {
-    display: none;
-    .loaderspinner {
-      width: 32px;
-      height: 32px;
+  &-btn-contratado {
+    width: 42px;
+    height: 34px;
+    &.contratado {
+      background-color: $secondary-color;
+    }
+    &.nocontratado {
+      background-color: #4d4d4d !important;
+      border-color: #4d4d4d !important;
     }
   }
-  .panelcargado {
-    display: none;
+  &-datos {
+    font-size: 1.2rem;
   }
-  .consultarchoferalert {
-    display: none;
+
+  .table-container {
+    padding: 0px 15px;
+    thead tr th {
+      background-color: $aux-color;
+    }
+    .dataTables_wrapper.no-footer .dataTables_scrollBody {
+      border-bottom: 1px solid $aux-color;
+    }
+  }
+  &-separador {
+    border-bottom: 1px solid $aux-color;
+    border-width: thin;
+    width: calc(100% + 56px);
+    transform: translateX(-28px);
+  }
+  &-btn-referencias {
+    padding: 0.2rem 0.5rem;
+    width: 100%;
+    white-space: nowrap;
+  }
+  &-reportes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+    grid-gap: 2rem;
+    div.consultar-chofer-reporte {
+      padding: 1.5rem 1rem;
+      padding-bottom: 0rem;
+      div.consultar-chofer-reporte-collapse {
+        padding-top: 0.5rem;
+      }
+    }
+    p {
+      margin-bottom: 0.5rem;
+      span {
+        font-weight: bold;
+        margin-right: 0.3rem;
+      }
+    }
+
+    button {
+      padding: 0.2rem 0.5rem;
+      width: 100%;
+      i {
+        font-size: 1rem;
+      }
+      &:disabled {
+        cursor: not-allowed;
+      }
+    }
+    div.dropdown-menu {
+      display: relative !important;
+    }
+  }
+}
+@include media-query(map-get($grid-breakpoints, "md")) {
+  .consultar-chofer {
+    &-reportes {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+@include media-query(map-get($grid-breakpoints, "sm")) {
+  .consultar-chofer {
+    &-reportes {
+      grid-template-columns: 1fr;
+    }
   }
 }

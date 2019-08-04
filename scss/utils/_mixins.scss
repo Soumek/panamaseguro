@@ -52,7 +52,7 @@
 
 //Psudo icons
 @mixin psudoicon($content, $type, $weight: 900) {
-  content: '#{$content}';
-  font-family: 'Font Awesome 5 #{$type}';
+  content: "#{$content}";
+  font-family: "Font Awesome 5 #{$type}";
   font-weight: $weight;
 }

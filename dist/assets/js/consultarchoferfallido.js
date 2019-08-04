@@ -1,6 +1,8 @@
 $(document).ready(function() {
   $('.consultar-chofer-btn-contratado').on('click', function() {
     $('.consultar-chofer-btn-contratado').addClass('animated swing');
+    // $('#icon-contratado').removeClass('ti-check');
+    // $('#icon-contratado').addClass('ti-close');
     $('.consultar-chofer-btn-contratado').toggleClass(
       'contratado nocontratado'
     );
@@ -28,7 +30,7 @@ $(document).ready(function() {
   $('#consultarform').on('submit', function(e) {
     e.preventDefault();
     $.ajax({
-      url: 'http://127.0.0.1:5500/dist/assets/data/consultarchofer.json',
+      url: 'http://127.0.0.1:5500/dist/assets/data/consultarchofer.jon',
       method: 'GET',
       beforeSend: function() {
         $('#consultar-chofer-form').slideUp('slow');

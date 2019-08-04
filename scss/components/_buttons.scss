@@ -19,51 +19,10 @@
   }
   &-danger {
     background-color: $danger-color;
-    &.static {
-      border: none;
-
-      &:hover {
-        background-color: $danger-color;
-        border: none;
-        box-shadow: none;
-      }
-      &:not(:disabled):not(.disabled):active:focus {
-        box-shadow: none;
-      }
-      &:not(:disabled):not(.disabled):active {
-        background-color: $danger-color;
-      }
-    }
   }
   &-success {
     background-color: $success-color;
     border-radius: 0;
-    &.static {
-      border: none;
-
-      &:hover {
-        background-color: $success-color;
-        border: none;
-        box-shadow: none;
-      }
-      &:not(:disabled):not(.disabled):active:focus {
-        box-shadow: none;
-      }
-      &:not(:disabled):not(.disabled):active,
-      &:not(:disabled):not(.disabled):focus {
-        background-color: $success-color;
-      }
-      &:active {
-        background-color: $success-color;
-      }
-    }
-  }
-  &-static {
-    cursor: inherit !important;
-    &:focus,
-    &:active {
-      box-shadow: none;
-    }
   }
 
   &-light {
@@ -73,11 +32,10 @@
   i {
     font-size: 1.3rem;
   }
-  &.btn-rounded {
-    border-radius: 20px;
-  }
 }
-
+.btn-rounded {
+  border-radius: 20px;
+}
 //outline buttons//
 .outlined {
   background-color: transparent;

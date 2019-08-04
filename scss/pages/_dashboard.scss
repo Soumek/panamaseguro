@@ -1,5 +1,7 @@
 // Estilos globales del dashboard de usuario, cualquier cambio especifico se deberia llevar aqui por orden,
 // en este caso home es diferente a los demas por tanto se indica el cambio
+
+//Estilos de la parte superior del dashboard(varía para el home)
 .dashboard-header {
   padding: 2.5rem 1.25rem;
   height: auto;
@@ -31,12 +33,16 @@
         text-decoration: none;
       }
     }
+    span {
+      color: #aac6f9;
+    }
   }
   &-container.home {
     height: 45vh;
   }
 }
 
+//Estilos de la parte inferior del dashboard(varia para el home)
 .dashboard {
   &-container {
     position: relative;
@@ -59,13 +65,66 @@
     margin-top: 2rem;
     padding: 2rem;
     margin-bottom: 2rem;
+    &-title {
+      white-space: nowrap;
+    }
+    &-filter-container {
+      padding-left: 3px;
+    }
+    &-filter {
+      input {
+        padding: 1.5rem 1rem;
+      }
+      button {
+        padding: 0.5rem 1.5rem;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        i {
+          font-size: 1.3rem;
+        }
+      }
+    }
+
     .table-actions {
       padding-right: 27px;
       max-height: 40px;
       display: flex;
       justify-content: flex-end;
     }
+    //Estilo específico del dashboard(últimos choferes consultados)
+    .table-container {
+      .table tbody td {
+        > div.contract-btn-container {
+          text-align: center;
+          padding: 0.5rem 0rem;
+          .bg-danger,
+          .bg-success {
+            display: inline;
+            padding: 0.7rem 0.8rem;
+            border-radius: 50%;
+          }
+        }
+        > div.confirmar-contrato-chofer {
+          button {
+            width: 110px;
+            padding: 0.3rem 0.1rem;
+
+            span {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            font-size: 1rem;
+          }
+          span.contract-confirm {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
   }
+  //Estilos del menú de los módulos
   &-menu-container {
     padding: 0;
   }
@@ -167,7 +226,7 @@
   }
 }
 
-@include media-query(map-get($grid-breakpoints, 'md')) {
+@include media-query(map-get($grid-breakpoints, "md")) {
   .dashboard-header,
   .dashboard-header-container,
   .dashboard-header-title-container {
@@ -213,7 +272,7 @@
   }
 }
 
-@include media-query(map-get($grid-breakpoints, 'sm')) {
+@include media-query(map-get($grid-breakpoints, "sm")) {
   .dashboard-header,
   .dashboard-header-container,
   .dashboard-header-title-container {

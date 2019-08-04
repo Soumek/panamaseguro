@@ -1,3 +1,4 @@
+// Estilos para los modales, se dividen en dos tipos, modal form y modal notificacion
 .modal.modal-form {
   .modal-dialog {
     max-width: 600px;
@@ -31,7 +32,7 @@
   }
 }
 
-@include media-query(map-get($grid-breakpoints, 'md')) {
+@include media-query(map-get($grid-breakpoints, "md")) {
   .modal.modal-form {
     .modal-dialog {
       max-width: inherit;

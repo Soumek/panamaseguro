@@ -1,0 +1,13 @@
+.listado {
+  &-usuarios-status {
+    font-weight: 300;
+    border-radius: 20px;
+    padding: 0.2rem 0rem;
+    width: 100%;
+    display: inline-flex !important;
+  }
+  &-usuarios-table {
+    table-layout: fixed;
+    word-wrap: break-word;
+  }
+}

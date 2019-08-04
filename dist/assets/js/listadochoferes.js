@@ -8,16 +8,16 @@ $(document).ready(function() {
     language: idioma_espanol
   });
   $("#nuevo-chofer-btn").click(function() {
-    $("#dashboard-chofer-table").slideUp();
-    $("#dashboard-chofer-form").slideDown();
+    $("#listado-chofer-table").slideUp();
+    $("#listado-chofer-form").slideDown();
   });
   $("#table-chofer-btn").click(function() {
-    $("#dashboard-chofer-form").slideUp();
-    $("#dashboard-chofer-table").slideDown();
+    $("#listado-chofer-form").slideUp();
+    $("#listado-chofer-table").slideDown();
   });
   $("#table-chofer-edit-btn").click(function() {
-    $("#dashboard-chofer-edit").slideUp();
-    $("#dashboard-chofer-table").slideDown();
+    $("#listado-chofer-edit").slideUp();
+    $("#listado-chofer-table").slideDown();
   });
   $("#table-1 tbody").on("click", "button.edit", function() {
     $("#cedulachofer").val("19070484");
@@ -25,7 +25,18 @@ $(document).ready(function() {
     $("#apellidochofer").val("Ramos Zoto");
     $("#tlfchofer").val("4245373449");
     $("#direccionchofer").val("Barrio las Lomas, la chorrera");
-    $("#dashboard-chofer-table").slideUp();
-    $("#dashboard-chofer-edit").slideDown();
+    $("#listado-chofer-table").slideUp();
+    $("#listado-chofer-edit").slideDown();
+  });
+
+  $(".listado-chofer-btn-contratado").on("click", function() {
+    $(".listado-chofer-btn-contratado").addClass("animated swing");
+    // $('#icon-contratado').removeClass('ti-check');
+    // $('#icon-contratado').addClass('ti-close');
+    $(".listado-chofer-btn-contratado").toggleClass("contratado nocontratado");
+    $(".icon-contratado").toggleClass("ti-check ti-close");
+    setTimeout(() => {
+      $(".listado-chofer-btn-contratado").removeClass("animated swing");
+    }, 500);
   });
 });
