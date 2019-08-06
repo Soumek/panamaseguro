@@ -3,6 +3,7 @@
 .container-fluid.footer{
    border:none;
    padding:0;
+   
    .box{
        margin:0;
    }
@@ -10,7 +11,15 @@
     position: relative;
     top:-100px;
     &.home{
-        top:-175px;
+        top:-25px
     }
    }
 }
+
+@include media-query(map-get($grid-breakpoints, "md")) {
+    .container-fluid.footer.footer-dashboard{
+        .footer-dashboard-copyright{
+            text-align: center;
+        }
+    }
+  }

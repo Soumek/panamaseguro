@@ -30,9 +30,7 @@
   &-success {
     @include set-background($success-color);
   }
-  &-black{
-    background-color:rgba(0, 0, 0, 0.5) !important; 
-  }
+  
 }
 
 //floats

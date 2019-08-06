@@ -49,16 +49,14 @@
     top: -150px;
     // height: calc(100% + 150px);
     // transform: translateY(-150px); 
-
+    &.home{
+      top: -75px;
+    }
   }
   &-content {
-    position: relative;
-    
-    width: 100%;
+    position: relative;    
   }
   &-content.home {
-    top: -75px;
-
     section.dashboard-menu-container {
       padding: 0;
     }
