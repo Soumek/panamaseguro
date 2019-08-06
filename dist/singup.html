@@ -18,45 +18,49 @@
     <link rel="stylesheet" href="assets/css/styles.min.css" />
 </head>
 
-<body class="img-cover singup">
-
-    <div class="container-fluid">
-        <div class="sign-form">
-            <div class="row">
-                <div class="col-md-4 offset-md-4 p-x-3">
-                    <div class="box b-a-0">
-                        <div class="p-4 text-center sign-form-brand">
-                            <span>¡Únete a nosotros!</span>
-                        </div>
-                        <form class="form-material ">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="exampleInputUsername" placeholder="Usuario">
+<body class="img-cover signform">
+    <div class="dark-overlay">
+        <div class="container-fluid">
+            <div class="sign-form">
+                <div class="row">
+                    <div class="col-md-4 offset-md-4 p-x-3">
+                        <div class="box b-a-0">
+                            <div class="p-4 text-center sign-form-brand">
+                                <span>¡Únete a nosotros!</span>
                             </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" id="exampleInputEmail" placeholder="Correo">
+                            <form class="form-material ">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="exampleInputUsername"
+                                        placeholder="Usuario">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="exampleInputEmail"
+                                        placeholder="Correo">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="exampleInputPassword"
+                                        placeholder="Contraseña">
+                                </div>
+                                <div class="form-group mb-5">
+                                    <input type="password" class="form-control" id="exampleInputResetPassword"
+                                        placeholder="Confirmar Contraseña">
+                                </div>
+                                <div class="px-4 form-group mb-0">
+                                    <button type="submit"
+                                        class="btn btn-secondary btn-block sign-form-submitbtn ">Regístrate</button>
+                                </div>
+                            </form>
+                            <div class="p-4 text-center text-muted">
+                                ¿Ya tienes una cuenta? <a class="text-black ml-1" href="login.html"><span
+                                        class="underline">¡Ingresa!</span></a>
                             </div>
-                            <div class="form-group">
-                                <input type="password" class="form-control" id="exampleInputPassword"
-                                    placeholder="Contraseña">
-                            </div>
-                            <div class="form-group mb-5">
-                                <input type="password" class="form-control" id="exampleInputResetPassword"
-                                    placeholder="Confirmar Contraseña">
-                            </div>
-                            <div class="px-4 form-group mb-0">
-                                <button type="submit"
-                                    class="btn btn-secondary btn-block sign-form-submitbtn ">Regístrate</button>
-                            </div>
-                        </form>
-                        <div class="p-4 text-center text-muted">
-                            ¿Ya tienes una cuenta? <a class="text-black ml-1" href="login.html"><span
-                                    class="underline">¡Ingresa!</span></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
 
     <script type="text/javascript" src="../vendor/jquery/jquery-3.3.1.slim.min.js"></script>
     <script type="text/javascript" src="../vendor/bootstrap/bootstrap.min.js"></script>

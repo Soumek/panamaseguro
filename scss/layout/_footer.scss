@@ -1,0 +1,16 @@
+
+
+.container-fluid.footer{
+   border:none;
+   padding:0;
+   .box{
+       margin:0;
+   }
+   &.footer-dashboard{
+    position: relative;
+    top:-100px;
+    &.home{
+        top:-175px;
+    }
+   }
+}
