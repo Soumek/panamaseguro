@@ -37,6 +37,11 @@
       color: #aac6f9;
     }
   }
+  &-breadcrumb-home{
+    &:hover{
+      color:$primary-color;
+    }
+  }
   &-container.home {
     height: 45vh;
   }
@@ -49,9 +54,7 @@
     top: -150px;
     // height: calc(100% + 150px);
     // transform: translateY(-150px); 
-    &.home{
-      top: -75px;
-    }
+    
   }
   &-content {
     position: relative;    
@@ -247,6 +250,9 @@
     &-content.home {
       top: 0px;
     }
+    &-container.home{
+      top: -100px;
+    }
     &-menu {
       .dropdown-dashboard-menu {
         z-index: 5;
@@ -292,6 +298,11 @@
   .dashboard {
     &-content.home {
       top: 0px;
+    }
+    &-container.home{
+      &.home{
+        top: -75px;
+      }
     }
 
     &-menu {
